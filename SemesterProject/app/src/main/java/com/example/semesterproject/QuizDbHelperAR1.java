@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
 public class QuizDbHelperAR1 extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "MothAR1Quiz.db";
+    private static final String DATABASE_NAME = "MathAR1Quiz.db";
     private static final int DATABASE_VERSION = 1;
     private SQLiteDatabase db;
     public QuizDbHelperAR1(Context context) {
@@ -37,17 +37,17 @@ public class QuizDbHelperAR1 extends SQLiteOpenHelper {
         onCreate(db);
     }
     private void fillQuestionsTable() {
-        Question q1 = new Question("?", "A: 12 for every 7", "B: 7 for every 12", "C: 7 for every 19","D: 19 for every 7", 1);
+        Question q1 = new Question("2.888+42=?", "A: 44.888", "B: 43.888", "C: 44.8","D: 44.88", 1);
         addQuestion(q1);
-        Question q2 = new Question("?", "A: 3:7", "B: 4:7", "C: 7:4","D: 3:12", 1);
+        Question q2 = new Question("To visit his grandmother, Luis takes a train 6.37 kilometers and a car 5.45 kilometers.\nHow many kilometers is Luis's journey in total?", "A: 13.86", "B: 11.82", "C: 12.88","D: 10.54", 2);
         addQuestion(q2);
-        Question q3 = new Question("?", "A: 4 to 3", "B: 3 to 4", "C: 4 to 9","D: 4 to 12", 3);
+        Question q3 = new Question("Cayden has several screws on a scale, and the scale reads 80.955 g. Cayden adds 1 more screw, and the scale reads 84.81 g.\nWhat is the mass of the last screw Cayden adds?", "A: 3.855g", "B: 4.657g", "C: 2.845g","D: 3.085g", 1);
         addQuestion(q3);
-        Question q4 = new Question("?", "A: 14:6", "B: 3:24", "C: 14:3","D: 24:3", 3);
+        Question q4 = new Question("A relay race covers 3/2 kilometers, and each runner on a team will run 1/4 of a kilometer.\nHow many runners are needed for a team?", "A: 8 runners", "B: 4 runners", "C: 6 runners","D: 9 runners", 3);
         addQuestion(q4);
-        Question q5 = new Question("?", "A: 6 for every 9", "B: 6 for every 13", "C: 6 for every 30","D: 13 for every 6", 2);
+        Question q5 = new Question("A piano 9/2 hours available to teach in a night. Each lesson will last 3/2 hours.\n How many lessons can the teacher schedule in a night?", "A: 6 lessons", "B: 5 lessons", "C: 9 lessons","D: 3 lessons", 4);
         addQuestion(q5);
-        Question q6 = new Question("?", "A: 3 to 8", "B: 3 to 10", "C: 8 to 3","D: 3 to 18", 2);
+        Question q6 = new Question("A baker has 21/4 pieces in her shop. She cut the pies in pieces that are each 1/8 of a whole pie. How many pieces of pie does she have?", "A: 36 pieces", "B: 48 pieces", "C: 42 pieces","D: 40 pieces", 3);
         addQuestion(q6);
     }
     private void addQuestion(Question question) {
