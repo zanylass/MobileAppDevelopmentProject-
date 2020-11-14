@@ -17,8 +17,6 @@
             android:label="@string/title_activity_ratio_content_page"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MathContentActivity" />
-        <activity android:name=".MathRatioQuiz5pg" />
-        <activity android:name=".MathRatioQuiz2pg" />
         <activity android:name=".MathRatioQuiz1" />
         <activity android:name=".MathRatioPage" />
         <activity android:name=".MainActivity">
