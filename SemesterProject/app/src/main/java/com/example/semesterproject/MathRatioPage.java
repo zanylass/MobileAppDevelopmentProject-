@@ -17,6 +17,7 @@ public class MathRatioPage extends AppCompatActivity {
     public static final String KEY_HIGHSCORE="keyHighscore";
     private TextView ratioPage;
     private TextView ratePage;
+    private TextView percentPage;
 
     private int highscore;
 
@@ -34,6 +35,7 @@ public class MathRatioPage extends AppCompatActivity {
         quiz3=(Button) findViewById(R.id.buttonQuiz3);
         ratioPage=(TextView)findViewById(R.id.RatioContent);
         ratePage=(TextView)findViewById(R.id.ratesContent);
+        percentPage=(TextView)findViewById(R.id.textViewPercentage);
         textViewHighScore=(TextView)findViewById(R.id.textViewHighScoreQuiz1);
         loadHighscore();
         quiz1.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +66,11 @@ public class MathRatioPage extends AppCompatActivity {
                 openRateTopic();
             }
         });
+        percentPage.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openPercentageTopic();
+            }
+        });
     }
 
     public void openRatioTopic(){
@@ -76,6 +83,12 @@ public class MathRatioPage extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void openPercentageTopic(){
+        Intent intent = new Intent(this, MathPercentageContent.class);
+        startActivity(intent);
+
+    }
+
     public void openQuiz1() {
         Intent intent = new Intent(this, MathRatioQuiz1.class);
         startActivityForResult(intent,REQUEST_CODE_QUIZ);
@@ -115,7 +128,7 @@ public class MathRatioPage extends AppCompatActivity {
         startActivity(intent);
     }
     public void openQuiz3() {
-        Intent intent = new Intent(this, MathRatioQuiz1.class);
+        Intent intent = new Intent(this, MathQuizPercentage.class);
         startActivity(intent);
     }
 }
