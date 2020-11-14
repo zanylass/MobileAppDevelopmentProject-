@@ -23,6 +23,7 @@ public class MathRatioPage extends AppCompatActivity {
     public Button quiz2;
     public Button quiz3;
     private TextView textViewHighScore;
+    private TextView ratesTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MathRatioPage extends AppCompatActivity {
         quiz2=(Button) findViewById(R.id.buttonQuiz2);
         quiz3=(Button) findViewById(R.id.buttonQuiz3);
         ratioPage=(TextView)findViewById(R.id.RatioContent);
+        ratesTextView=(TextView)findViewById(R.id.textViewRates);
         textViewHighScore=(TextView)findViewById(R.id.textViewHighScoreQuiz1);
         loadHighscore();
         quiz1.setOnClickListener(new View.OnClickListener() {
@@ -57,8 +59,17 @@ public class MathRatioPage extends AppCompatActivity {
                 openRatioTopic();
             }
         });
+        ratesTextView.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openRatesTopic();
+            }
+        });
     }
+    public void openRatesTopic(){
+        Intent intent = new Intent(this, MathRatesContent.class);
+        startActivity(intent);
 
+    }
     public void openRatioTopic(){
         Intent intent = new Intent(this, RatioContentPage.class);
         startActivity(intent);
