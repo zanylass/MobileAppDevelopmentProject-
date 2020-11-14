@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
 public class QuizDbHelperPercentage extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "MothPercentageQuiz.db";
+    private static final String DATABASE_NAME = "MathPercentageQuiz.db";
     private static final int DATABASE_VERSION = 1;
     private SQLiteDatabase db;
     public QuizDbHelperPercentage(Context context) {
@@ -37,17 +37,17 @@ public class QuizDbHelperPercentage extends SQLiteOpenHelper {
         onCreate(db);
     }
     private void fillQuestionsTable() {
-        Question q1 = new Question("?", "A: 12 for every 7", "B: 7 for every 12", "C: 7 for every 19","D: 19 for every 7", 1);
+        Question q1 = new Question("Which of the following options have the same value as 2% of 90?", "A: 0.2x90", "B: 0.02x90", "C: 200x90","D: 2x90", 2);
         addQuestion(q1);
-        Question q2 = new Question("?", "A: 3:7", "B: 4:7", "C: 7:4","D: 3:12", 1);
+        Question q2 = new Question("Which of the following options have the same value as 10% of 33?", "A: 0.1x0.33", "B: 10x33", "C: 0.1x33","D: 10*0.33", 3);
         addQuestion(q2);
-        Question q3 = new Question("?", "A: 4 to 3", "B: 3 to 4", "C: 4 to 9","D: 4 to 12", 3);
+        Question q3 = new Question("What is 40% of 10?", "A: 4", "B: 0.4", "C: 40","D: 1", 1);
         addQuestion(q3);
-        Question q4 = new Question("?", "A: 14:6", "B: 3:24", "C: 14:3","D: 24:3", 3);
+        Question q4 = new Question("Challenger Elementary School has 800 students. Every Wednesday, 12% of the students stay after school for Chess Club.\nHow many students attend Chess Club on Wednesdays? ", "A: 96", "B: 84", "C: 120","D: 108", 1);
         addQuestion(q4);
-        Question q5 = new Question("?", "A: 6 for every 9", "B: 6 for every 13", "C: 6 for every 30","D: 13 for every 6", 2);
+        Question q5 = new Question("Esteban has a big jar of change in his room. He has 600 coins total, and 240 of them are pennies.\n What percentage of the coins are pennies?", "A: 42%", "B: 46%", "C: 40%","D: 25%", 3);
         addQuestion(q5);
-        Question q6 = new Question("?", "A: 3 to 8", "B: 3 to 10", "C: 8 to 3","D: 3 to 18", 2);
+        Question q6 = new Question("In the United States, 13 out of every 20 cans are recycled.\n What percent of cans are recycled?", "A: 85%", "B: 67%", "C: 56%","D: 65%", 4);
         addQuestion(q6);
     }
     private void addQuestion(Question question) {
