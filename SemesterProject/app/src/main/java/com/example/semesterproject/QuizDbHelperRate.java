@@ -37,7 +37,7 @@ public class QuizDbHelperRate extends SQLiteOpenHelper {
         onCreate(db);
     }
     private void fillQuestionsTable() {
-        Question q1 = new Question("4:2?", "A: 12 for every 7", "B: 7 for every 12", "C: 7 for every 19","D: 19 for every 7", 1);
+        Question q1 = new Question("?", "A: 12 for every 7", "B: 7 for every 12", "C: 7 for every 19","D: 19 for every 7", 1);
         addQuestion(q1);
         Question q2 = new Question("1:2?", "A: 3:7", "B: 4:7", "C: 7:4","D: 3:12", 1);
         addQuestion(q2);
