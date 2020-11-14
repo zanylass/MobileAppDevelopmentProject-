@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MathPercentageContent"></activity>
+        <activity android:name=".MathARQuiz3"></activity>
+        <activity android:name=".MathARQuiz2" />
+        <activity android:name=".MathARQuiz1" />
+        <activity android:name=".MathArithOperationContentPage" />
+        <activity android:name=".MathPercentageContent" />
         <activity android:name=".MathQuizPercentage" />
         <activity android:name=".MathRateQuiz" />
         <activity
