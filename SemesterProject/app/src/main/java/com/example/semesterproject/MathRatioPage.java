@@ -16,6 +16,7 @@ public class MathRatioPage extends AppCompatActivity {
     public static final String SHARED_PREFS="sharedPrefs";
     public static final String KEY_HIGHSCORE="keyHighscore";
     private TextView ratioPage;
+    private TextView ratePage;
 
     private int highscore;
 
@@ -32,6 +33,7 @@ public class MathRatioPage extends AppCompatActivity {
         quiz2=(Button) findViewById(R.id.buttonQuiz2);
         quiz3=(Button) findViewById(R.id.buttonQuiz3);
         ratioPage=(TextView)findViewById(R.id.RatioContent);
+        ratePage=(TextView)findViewById(R.id.ratesContent);
         textViewHighScore=(TextView)findViewById(R.id.textViewHighScoreQuiz1);
         loadHighscore();
         quiz1.setOnClickListener(new View.OnClickListener() {
@@ -57,9 +59,19 @@ public class MathRatioPage extends AppCompatActivity {
                 openRatioTopic();
             }
         });
+        ratePage.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openRateTopic();
+            }
+        });
     }
 
     public void openRatioTopic(){
+        Intent intent = new Intent(this, RatioContentPage.class);
+        startActivity(intent);
+
+    }
+    public void openRateTopic(){
         Intent intent = new Intent(this, RatioContentPage.class);
         startActivity(intent);
 
@@ -99,7 +111,7 @@ public class MathRatioPage extends AppCompatActivity {
     }
 
     public void openQuiz2() {
-        Intent intent = new Intent(this, MathRatioQuiz1.class);
+        Intent intent = new Intent(this, MathRateQuiz.class);
         startActivity(intent);
     }
     public void openQuiz3() {
