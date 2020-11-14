@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">SemesterProject</string>
+    <string name="title_activity_math_content">ScrollingActivity</string>
+    <string name="large_text">
+        "<b>Ratio</b>\n\n"
+
+        "In mathematics, a ratio indicates how many times one number contains another. For example, if there are eight oranges and six lemons in a bowl of fruit, then the ratio of oranges to lemons is eight to six (that is, 8∶6, which is equivalent to the ratio 4∶3). Similarly, the ratio of lemons to oranges is 6∶8 (or 3∶4) and the ratio of oranges to the total amount of fruit is 8∶14 (or 4∶7).\n"
+        "The numbers in a ratio may be quantities of any kind, such as counts of people or objects, or such as measurements of lengths, weights, time, etc. In most contexts, both numbers are restricted to be positive.\n"
+        "A ratio may be specified either by giving both constituting numbers, written as "a to b" or "a∶b",or by giving just the value of their quotient a/b. Equal quotients correspond to equal ratios.\n"
+        "Consequently, a ratio may be considered as an ordered pair of numbers, a fraction with the first number in the numerator and the second in the denominator, or as the value denoted by this fraction. Ratios of counts, given by (non-zero) natural numbers, are rational numbers, and may sometimes be natural numbers. When two quantities are measured with the same unit, as is often the case, their ratio is a dimensionless number. A quotient of two quantities that are measured with different units is called a rate.\n"
+        "<b>Notation and terminology</b>\n\n"
+        "The ratio of numbers A and B can be expressed as: \n"
+        "-the ratio of A to B\n"
+        "-A∶B\n"
+        "-A is to B (when followed by "as C is to D "; see below)\n"
+        "a fraction with A as numerator and B as denominator that represents the quotient (i.e., A divided by B or A/B). This can be expressed as a simple or a decimal fraction, or as a percentage, etc.\n"
+
+        "The numbers A and B are sometimes called terms of the ratio, with A being the antecedent and B being the consequent.\n"
+
+        "A statement expressing the equality of two ratios A∶B and C∶D is called a proportion, written as A∶B = C∶D or A∶B:C∶D. This latter form, when spoken or written in the English language, is often expressed as\n "
+        "(A is to B) as (C is to D). "
+        "A, B, C and D are called the terms of the proportion. A and D are called its extremes, and B and C are called its means. The equality of three or more ratios, like A∶B = C∶D = E∶F, is called a <b>continued proportion.</b>\n "
+        "Ratios are sometimes used with three or even more terms, e.g., the proportion for the edge lengths of a <i>two by four</i> that is ten inches long is therefore\n"
+        "thickness : width : length =2:4:10\n"
+        "The meaning of such a proportion of ratios with more than two terms is that the ratio of any two terms on the left-hand side is equal to the ratio of the corresponding two terms on the right-hand side. "
+        "<b>Examples</b>\n\n"
+        "A Recipe for pancakes uses 3 cups of flour and 2 cups of milk.\n"
+        "So the ratio of flour to milk is 3 : 2\n"
+        "To make pancakes for a LOT of people we might need 4 times the quantity, so we multiply the numbers by 4:\n"
+        "3×4 : 2×4 = 12 : 8\n"
+        "In other words, 12 cups of flour and 8 cups of milk.\n"
+        "<b>Big Foot Example</b>"
+        "Allie measured her foot and it was 21cm long, and then she measured her Mother\'s foot, and it was 24cm long.\n "
+        "But then she thought to measure heights, and found she is 133cm tall, and her Mom is 152cm tall.\n"
+
+        "The foot-to-height ratio in fraction style is:\n"
+        "Allie:	 21/133 and Mom: 24/152\n"
+        "So the ratio for Allie is 21 : 133\n "
+        "By dividing both values by 7 we get 21/7 : 133/7 = 3 : 19 \n"
+        "It is still the same ratio, right? Because we divided both numbers by the same amount.\nAnd the ratio for Mom is 24 : 152\n "
+        "By dividing both values by 8 we get 24/8 : 152/8 = 3 : 19\n"
+        "This time we divided by 8, but that ratio stays the same, too.\nThe simplified foot-to-height ratios are now:\nAllie:	 3/19 	 	Mom:	 3/19"
+
+
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ratio_content_page">ScrollingActivity</string>
+</resources>
