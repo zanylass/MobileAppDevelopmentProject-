@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MathRateQuiz"></activity>
+        <activity android:name=".MathPercentageContent"></activity>
+        <activity android:name=".MathQuizPercentage" />
+        <activity android:name=".MathRateQuiz" />
         <activity
             android:name=".RatioContentPage"
             android:label="@string/title_activity_ratio_content_page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MathContentActivity" />
         <activity android:name=".MathRatioQuiz5pg" />
         <activity android:name=".MathRatioQuiz2pg" />
