@@ -66,7 +66,7 @@ public class MathContentActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openMathOperations(){
-        Intent intent = new Intent(this, MathRatioPage.class);
+        Intent intent = new Intent(this, MathArithOperationContentPage.class);
         startActivity(intent);
     }
     public void openMathNegNumbers(){
