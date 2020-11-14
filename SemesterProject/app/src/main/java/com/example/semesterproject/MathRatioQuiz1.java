@@ -250,10 +250,7 @@ public class MathRatioQuiz1 extends AppCompatActivity {
         }
     }
 
-    public void openQuizPage2() {
-        Intent intent = new Intent(this, MathRatioQuiz2pg.class);
-        startActivity(intent);
-    }
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
