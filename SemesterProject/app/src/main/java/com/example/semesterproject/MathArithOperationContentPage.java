@@ -24,8 +24,8 @@ public class MathArithOperationContentPage extends AppCompatActivity {
         arOper2=(TextView)findViewById(R.id.ArOperTextView2);
         arOper3=(TextView)findViewById(R.id.ArOperTextView3);
         ar1Button=(Button)findViewById(R.id.buttonAr1);
-        ar2Button=(Button)findViewById(R.id.buttonAr1);
-        ar3Button=(Button)findViewById(R.id.buttonAr1);
+        ar2Button=(Button)findViewById(R.id.buttonAr2);
+        ar3Button=(Button)findViewById(R.id.buttonAr3);
         ar1Button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 openAr1Quiz();
