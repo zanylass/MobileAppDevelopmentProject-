@@ -65,7 +65,7 @@ public class MathARQuiz3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_math_ratio_quiz1);
+        setContentView(R.layout.activity_math_a_r_quiz3);
         checkButton=(Button)findViewById(R.id.buttonCheck);
         textViewQuestion=(TextView)findViewById(R.id.text_view_question1);
         textViewScore=(TextView)findViewById(R.id.text_view_score);
