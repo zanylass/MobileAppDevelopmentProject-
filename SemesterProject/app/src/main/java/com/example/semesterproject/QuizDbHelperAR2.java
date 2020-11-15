@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
 public class QuizDbHelperAR2 extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "MothAR2Quiz.db";
+    private static final String DATABASE_NAME = "MathAR2Quiz.db";
     private static final int DATABASE_VERSION = 1;
     private SQLiteDatabase db;
     public QuizDbHelperAR2(Context context) {
@@ -37,17 +37,18 @@ public class QuizDbHelperAR2 extends SQLiteOpenHelper {
         onCreate(db);
     }
     private void fillQuestionsTable() {
-        Question q1 = new Question("?", "A: 12 for every 7", "B: 7 for every 12", "C: 7 for every 19","D: 19 for every 7", 1);
+        Question q1 = new Question("8 to the power of 2 is equal to which number?", "A: 6", "B: 16", "C: 64","D: 10", 3);
         addQuestion(q1);
-        Question q2 = new Question("?", "A: 3:7", "B: 4:7", "C: 7:4","D: 3:12", 1);
+        Question q2 = new Question("What does a non-zero number to the zero power equal?", "A: 0", "B: 1", "C: 1/2","D: 01", 2);
         addQuestion(q2);
-        Question q3 = new Question("?", "A: 4 to 3", "B: 3 to 4", "C: 4 to 9","D: 4 to 12", 3);
+        Question q3 = new Question("What is the power to this problem?\n" +
+                "6 x 6 x 6 x 6 x 6 x 6 x 6?", "A: 6 to the 7th power", "B: 6 to the 8th power", "C: 7 to the 9th power","D: 10 to the 5th power", 1);
         addQuestion(q3);
-        Question q4 = new Question("?", "A: 14:6", "B: 3:24", "C: 14:3","D: 24:3", 3);
+        Question q4 = new Question("To square a number is to use what mathematical operation?", "A: Multiplication", "B: Division", "C: Subtraction","D: Addition", 1);
         addQuestion(q4);
-        Question q5 = new Question("?", "A: 6 for every 9", "B: 6 for every 13", "C: 6 for every 30","D: 13 for every 6", 2);
+        Question q5 = new Question("What is the number used as a factor in a power?", "A: Term", "B: Base", "C: Coefficient","D: Exponent", 4);
         addQuestion(q5);
-        Question q6 = new Question("?", "A: 3 to 8", "B: 3 to 10", "C: 8 to 3","D: 3 to 18", 2);
+        Question q6 = new Question("I'm thinking of a number. The square of this number is 64. What is the number?", "A: 32", "B: 12", "C: 4","D: 8", 3);
         addQuestion(q6);
     }
     private void addQuestion(Question question) {
