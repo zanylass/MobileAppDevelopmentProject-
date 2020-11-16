@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MathNNQuiz3"></activity>
+        <activity android:name=".MathPropN3Quiz"></activity>
+        <activity android:name=".MathPropN2Quiz" />
+        <activity android:name=".MathPropN1Quiz" />
+        <activity android:name=".MathNNQuiz3" />
         <activity android:name=".MathNNQuiz2" />
         <activity android:name=".MathNNQuiz1" />
         <activity android:name=".MathNN3" />
