@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateContentPage">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rates"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mathrate"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:text="A ratio is a comparison of two numbers or measurements. The numbers or measurements being compared are called the terms of the ratio. A rate is a special ratio in which the two terms are in different units. For example, if a 12-ounce can of corn costs 69¢,
+                the rate is 69¢ for 12 ounces. The first term of the ratio is measured in cents; the second term in ounces.
+                You can write this rate as 69¢/12 ounces or 69¢:12 ounces. Both expressions mean that you pay 69¢ for every 12 ounces of cornes." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rates are used by people every day, such as when they work 40 hours a week or earn interest every year at a bank.
+                When rates are expressed as a quantity of 1, such as 2 feet per second or 5 miles per hour, they are called unit rates.
+                If you have a multiple-unit rate such as 120 students for every 3 buses, and want to
+                find the single-unit rate, write a ratio equal to the multiple-unit rate with 1 as the second term." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="120/3 = 40/1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The unit rate of 120 students for every 3 buses is 40 students per bus. You could also find the unit rate by dividing the first term of the ratio by the second term. When prices are expressed as a quantity of 1, such as $25 per ticket or $0.89 per can, they are called unit prices. If you have a multiple-unit price, such as $5.50 for 5 pounds of potatoes, and want to find the single-unit price, divide the multiple-unit price by the number of units."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="$5.50 ÷ 5 = $1.10"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The unit price of potatoes that cost $5.50 for 5 pounds is $1.10 per pound."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rates and unit rates are used to solve many real-world problems. Look at the following problem. Tonya works 60 hours every 3 weeks. At that rate, how many hours will she work in 12 weeks? The problem tells you that Tonya works at the rate of 60 hours every 3 weeks. To find the number of hours she will work in 12 weeks, write a ratio equal to 60/3 that has a second term of 12."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="60/3 = 240/12"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tonya will work 240 hours in 12 weeks."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="You could also solve this problem by first finding the unit rate and multiplying it by 12."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="60/3 = 20/1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" 20 x 12 = 240"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="When you find equal ratios, it is important to remember that if you multiply or divide one term of a ratio by a number, then you need to multiply or divide the other term by that same number. Now let's take a look at a problem that involves unit price. A sign in a store says 3 Pens for $2.70. How much would 10 pens cost? To solve the problem, find the unit price of the pens, then multiply by 10."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="$2.70 ÷ 3 = $0.90"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="$0.90 times 10 = $9.00"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Finding the cost of one unit first makes it easy to find the cost of multiple units." />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
