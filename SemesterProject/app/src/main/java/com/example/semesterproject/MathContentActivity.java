@@ -73,10 +73,9 @@ public class MathContentActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MathNegNumContentPage.class);
         startActivity(intent);
     }
-    public void openMathPropNumbers(){
-        Intent intent = new Intent(this, MathRatioPage.class);
-        startActivity(intent);
-    }
+    public void openMathPropNumbers() {
+        Intent intent = new Intent(this, MathPropNumContentPage.class);
+        startActivity(intent);}
     public void openMathVariables(){
         Intent intent = new Intent(this, MathRatioPage.class);
         startActivity(intent);
