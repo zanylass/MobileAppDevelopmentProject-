@@ -12,8 +12,7 @@ public class MathContentActivity extends AppCompatActivity {
     public TextView operatios;
     public TextView negNumbers;
     public TextView propNumbers;
-    public TextView variables;
-    public TextView equations;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +22,7 @@ public class MathContentActivity extends AppCompatActivity {
         operatios=(TextView) findViewById(R.id.textViewArOperations);
         negNumbers=(TextView) findViewById(R.id.textViewNegNum);
         propNumbers=(TextView) findViewById(R.id.textViewPropNum);
-        variables=(TextView) findViewById(R.id.textViewVariable);
-        equations=(TextView) findViewById(R.id.textViewEquat);
+
 
         //hyperlink from textviews to separate content pages
 
@@ -48,16 +46,8 @@ public class MathContentActivity extends AppCompatActivity {
                 openMathPropNumbers();
             }
         });
-        variables.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                openMathVariables();
-            }
-        });
-        equations.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                openMathEquations();
-            }
-        });
+
+
 
     }
     //opening all pages
@@ -76,13 +66,6 @@ public class MathContentActivity extends AppCompatActivity {
     public void openMathPropNumbers() {
         Intent intent = new Intent(this, MathPropNumContentPage.class);
         startActivity(intent);}
-    public void openMathVariables(){
-        Intent intent = new Intent(this, MathRatioPage.class);
-        startActivity(intent);
-    }
-    public void openMathEquations(){
-        Intent intent = new Intent(this, MathRatioPage.class);
-        startActivity(intent);
-    }
+
 
 }
