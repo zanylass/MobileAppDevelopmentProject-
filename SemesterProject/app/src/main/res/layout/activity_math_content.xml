@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textViewArOperations"
-        android:layout_width="172dp"
-        android:layout_height="23dp"
+        android:layout_width="250dp"
+        android:layout_height="31dp"
         android:text="Arithmetic Operations"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,8 +20,8 @@
 
     <TextView
         android:id="@+id/textViewNegNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="205dp"
+        android:layout_height="32dp"
         android:text="Negative numbers"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
