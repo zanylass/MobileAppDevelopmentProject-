@@ -9,76 +9,75 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MathPropNumContentPage extends AppCompatActivity {
-    private TextView pnOper1;
-    private TextView pnOper2;
-    private TextView pnOper3;
-    private Button pn1Button;
-    private Button pn2Button;
-    private Button pn3Button;
+    private TextView pn1topic;
+    private TextView pn2topic;
+    private TextView pn3topic;
+    private Button pn1quiz;
+    private Button pn2quiz;
+    private Button pn3quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_prop_num_content_page);
-        pnOper1=(TextView)findViewById(R.id.PNumTextView1);
-        pnOper2=(TextView)findViewById(R.id.PNumTextView2);
-        pnOper3=(TextView)findViewById(R.id.PNumTextView3);
-        pn1Button=(Button)findViewById(R.id.buttonPN1);
-        pn2Button=(Button)findViewById(R.id.buttonPN2);
-        pn3Button=(Button)findViewById(R.id.buttonNN3);
-        pn1Button.setOnClickListener(new View.OnClickListener(){
+        pn1topic=(TextView)findViewById(R.id.textViewPN1);
+        pn2topic=(TextView)findViewById(R.id.textViewPN2);
+        pn3topic=(TextView)findViewById(R.id.textViewPN3);
+        pn1quiz=(Button)findViewById(R.id.buttonPN1);
+        pn2quiz=(Button) findViewById(R.id.buttonPN2);
+        pn3quiz=(Button) findViewById(R.id.buttonPN3);
+        pn1topic.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openPN1Quiz();
+                openPN1topic();
             }
         });
-        pn2Button.setOnClickListener(new View.OnClickListener(){
+        pn2topic.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openPN2Quiz();
+                openPN2topic();
             }
         });
-        pn3Button.setOnClickListener(new View.OnClickListener(){
+        pn3topic.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openPN3Quiz();
+                openPN3topic();
             }
         });
-        pnOper1.setOnClickListener(new View.OnClickListener(){
+        pn1quiz.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openPN1Topic();
+                openPN1quiz();
             }
         });
-        pnOper2.setOnClickListener(new View.OnClickListener(){
+        pn2quiz.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openPN2Topic();
+                openPN2quiz();
             }
         });
-        pnOper3.setOnClickListener(new View.OnClickListener(){
+        pn3quiz.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openPN3Topic();
+                openPN3quiz();
             }
         });
-
     }
-    public void openPN1Topic(){
+    public void openPN1topic(){
         Intent intent = new Intent(this, MathPN1.class);
         startActivity(intent);
     }
-    public void openPN2Topic(){
+    public void openPN2topic(){
         Intent intent = new Intent(this, MathPN2.class);
         startActivity(intent);
     }
-    public void openPN3Topic(){
+    public void openPN3topic(){
         Intent intent = new Intent(this, MathPN3.class);
         startActivity(intent);
     }
-    public void openPN1Quiz(){
+    public void openPN1quiz(){
         Intent intent = new Intent(this, MathPropN1Quiz.class);
         startActivity(intent);
     }
-    public void openPN2Quiz(){
+    public void openPN2quiz(){
         Intent intent = new Intent(this, MathPropN2Quiz.class);
         startActivity(intent);
     }
-    public void openPN3Quiz(){
+    public void openPN3quiz(){
         Intent intent = new Intent(this, MathPropN3Quiz.class);
         startActivity(intent);
     }
