@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
 public class QuizDbHelperPropN3 extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "MothPN1Quiz.db";
+    private static final String DATABASE_NAME = "MothPN3Quiz.db";
     private static final int DATABASE_VERSION = 1;
     private SQLiteDatabase db;
     public QuizDbHelperPropN3(Context context) {
@@ -37,18 +37,16 @@ public class QuizDbHelperPropN3 extends SQLiteOpenHelper {
         onCreate(db);
     }
     private void fillQuestionsTable() {
-        Question q1 = new Question("The temperature at 3:00 PM was 15 degrees. At midnight the temperature was -2 degrees. What's the difference between those two temperatures?", "A: 13 degrees", "B: 17 degrees", "C: 19 degrees","D: 10 degrees", 2);
+        Question q1 = new Question("List all the factors of 12", "A: 1, 2, 3, 4, 6, 12", "B: 1, 12", "C: 1, 2, 4, 12","D: 1, 2, 3, 4, 5, 6, 12", 1);
         addQuestion(q1);
-        Question q2 = new Question("Which number is the greatest?", "A: 20", "B: -100", "C: -45","D: 50", 4);
+        Question q2 = new Question("What are the factors of 25?", "A: 1, 2, 3, 5, 10, 15, 25", "B: 1, 5, 25", "C: 1, 25","D: 1, 5", 2);
         addQuestion(q2);
-        Question q3 = new Question("Integers that are less than zero are called ___________ numbers.", "A: positive", "B: negative", "C: equal","D: complex", 2);
+        Question q3 = new Question("The Greatest Common Factor of two prime numbers is.", "A: 0", "B: 1", "C: There are no common factors.","D: Themselves.", 2);
         addQuestion(q3);
-        Question q4 = new Question("Mr. Lovell was playing cards with his son. In the first round he earned 52 points. In the second round he lost 20 points. How would you write this as an addition problem?", "A: 52 + 20", "B: -52 + -20", "C: 52 + -20","D: -52 + 20", 3);
+        Question q4 = new Question("Which one is a multiple of 4?", "A: 33", "B: 22", "C: 24","D: 18", 3);
         addQuestion(q4);
-        Question q5 = new Question("If the temperature in Minnesota drops 35 degrees Fahrenheit it will be -10 degrees Fahrenheit. What is the current temperature in Minnesota?", "A: 45", "B: 25", "C: -10","D: 10", 2);
+        Question q5 = new Question("What is the LCM of 3 and 4?", "A: 4", "B: 16", "C: 24","D: 12", 4);
         addQuestion(q5);
-        Question q6 = new Question("The town of Apple Valley, California is at an elevation of 2,900 feet above sea level. Death Valley, California has an elevation of 282 feet below sea level. What is the difference in elevation of these two towns?", "A: 3,182", "B: 2,616", "C: -2,616","D: -3,182", 1);
-        addQuestion(q6);
     }
     private void addQuestion(Question question) {
         ContentValues cv = new ContentValues();
