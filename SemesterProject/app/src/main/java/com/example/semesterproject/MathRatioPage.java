@@ -79,7 +79,7 @@ public class MathRatioPage extends AppCompatActivity {
 
     }
     public void openRateTopic(){
-        Intent intent = new Intent(this, RatioContentPage.class);
+        Intent intent = new Intent(this, RateContentPage.class);
         startActivity(intent);
 
     }
