@@ -45,10 +45,7 @@ public class QuizDbHelperPropN2 extends SQLiteOpenHelper {
         addQuestion(q3);
         Question q4 = new Question("The value of 300 × 4 × 0 × 10 is ____", "A: 0", "B: 1200", "C: 120000","D: 12000", 1);
         addQuestion(q4);
-        Question q5 = new Question("?", "A: ", "B: ", "C: ","D: ", );
-        addQuestion(q5);
-        Question q6 = new Question("?", "A: ", "B: ", "C: ","D: ", );
-        addQuestion(q6);
+
     }
     private void addQuestion(Question question) {
         ContentValues cv = new ContentValues();
