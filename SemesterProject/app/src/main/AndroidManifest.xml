@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MathPN3"></activity>
+        <activity android:name=".MathPropNumContentPage"></activity>
+        <activity android:name=".MathPN3" />
         <activity android:name=".MathPN2" />
         <activity android:name=".MathPN1" />
-        <activity android:name=".MathPropNumContentPage" />
         <activity android:name=".MathPropN3Quiz" />
         <activity android:name=".MathPropN2Quiz" />
         <activity android:name=".MathPropN1Quiz" />
