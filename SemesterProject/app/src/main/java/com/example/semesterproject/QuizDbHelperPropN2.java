@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
 public class QuizDbHelperPropN2 extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "MothPN2Quiz.db";
+    private static final String DATABASE_NAME = "MathPN2Quiz.db";
     private static final int DATABASE_VERSION = 1;
     private SQLiteDatabase db;
     public QuizDbHelperPropN2(Context context) {
