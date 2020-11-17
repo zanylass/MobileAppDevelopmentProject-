@@ -37,9 +37,9 @@ public class QuizDbHelperPropN2 extends SQLiteOpenHelper {
         onCreate(db);
     }
     private void fillQuestionsTable() {
-        Question q1 = new Question("The smallest whole number is _________.", "A: 1", "B: 0", "C: 2","D: None of those",4 );
+        Question q1 = new Question("The smallest whole number is _________.", "A: 1", "B: 0", "C: 2","D: None of those",2 );
         addQuestion(q1);
-        Question q2 = new Question("The whole number which has no predecessor is ____.", "A: 0", "B: 2", "C: None of those","D: 1",3 );
+        Question q2 = new Question("The whole number which has no predecessor is ____.", "A: 0", "B: 2", "C: None of those","D: 1",1 );
         addQuestion(q2);
         Question q3 = new Question("Fill in the blanks\n18 × 47 = 18 × 50 - 18 × ________?", "A: 0", "B: 3", "C: 1","D: 2", 2);
         addQuestion(q3);
