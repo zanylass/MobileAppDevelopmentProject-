@@ -5,5 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MathNN2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Negative Numbers"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="25dp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:src="@drawable/mathnegnum1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/mathnegnum2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:src="@drawable/mathnegnum3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="227dp"
+                android:src="@drawable/mathnegnum4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/mathnegnum5" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="261dp"
+                android:src="@drawable/mathnegnum6" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="297dp"
+                android:src="@drawable/mathnegnum7" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
