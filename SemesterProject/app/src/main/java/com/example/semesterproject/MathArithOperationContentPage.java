@@ -33,12 +33,12 @@ public class MathArithOperationContentPage extends AppCompatActivity {
         });
         ar2Button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openAr1Quiz();
+                openAr2Quiz();
             }
         });
         ar3Button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openAr1Quiz();
+                openAr3Quiz();
             }
         });
         arOper1.setOnClickListener(new View.OnClickListener(){
@@ -48,12 +48,12 @@ public class MathArithOperationContentPage extends AppCompatActivity {
         });
         arOper2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openAr1Topic();
+                openAr2Topic();
             }
         });
         arOper3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                openAr1Topic();
+                openAr3Topic();
             }
         });
     }
