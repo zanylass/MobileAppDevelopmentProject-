@@ -28,31 +28,32 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="229dp"
+                android:layout_height="197dp"
                 android:src="@drawable/mathnegnum1" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="230dp"
                 android:src="@drawable/mathnegnum2" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="297dp"
+                android:layout_height="260dp"
                 android:src="@drawable/mathnegnum3" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="237dp"
+                android:layout_height="227dp"
                 android:src="@drawable/mathnegnum4" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="230dp"
                 android:src="@drawable/mathnegnum5" />
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="297dp"
+                android:layout_height="261dp"
                 android:src="@drawable/mathnegnum6" />
             <ImageView
                 android:layout_width="match_parent"
