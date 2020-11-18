@@ -85,8 +85,8 @@
 
     <RadioGroup
         android:id="@+id/radio_group"
-        android:layout_width="136dp"
-        android:layout_height="121dp"
+        android:layout_width="289dp"
+        android:layout_height="136dp"
         android:layout_centerVertical="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,28 +97,28 @@
 
         <RadioButton
             android:id="@+id/radio_button1"
-            android:layout_width="wrap_content"
+            android:layout_width="274dp"
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="Option 1" />
 
         <RadioButton
             android:id="@+id/radio_button2"
-            android:layout_width="wrap_content"
+            android:layout_width="274dp"
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="Option 2" />
 
         <RadioButton
             android:id="@+id/radio_button3"
-            android:layout_width="wrap_content"
+            android:layout_width="271dp"
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="Option 3" />
 
         <RadioButton
             android:id="@+id/radio_button4"
-            android:layout_width="wrap_content"
+            android:layout_width="271dp"
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="Option 4" />
