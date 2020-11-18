@@ -46,19 +46,7 @@
                 android:layout_height="227dp"
                 android:src="@drawable/mathnegnum4" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:src="@drawable/mathnegnum5" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="261dp"
-                android:src="@drawable/mathnegnum6" />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="297dp"
-                android:src="@drawable/mathnegnum7" />
 
         </LinearLayout>
 
