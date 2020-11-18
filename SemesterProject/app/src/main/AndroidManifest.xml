@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.semesterproject">
-    <supports-screens
-        android:largeScreens="true"
-        android:smallScreens="true"
-        android:normalScreens="true"
-        android:xlargeScreens="true"/>
 
     <application
         android:allowBackup="true"
@@ -14,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MathAR3"></activity>
+        <activity android:name=".MathNN2"></activity>
+        <activity android:name=".MathPNx" />
+        <activity android:name=".MathPN4" />
+        <activity android:name=".MathAR3" />
         <activity android:name=".RateContentPage" />
         <activity android:name=".MathPropNumContentPage" />
         <activity android:name=".MathPN3" />
@@ -53,5 +51,11 @@
             </intent-filter>
         </activity>
     </application>
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
 </manifest>
