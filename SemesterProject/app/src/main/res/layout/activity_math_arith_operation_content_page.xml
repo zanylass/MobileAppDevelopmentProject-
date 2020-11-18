@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MathArithOperationContentPage">
+    tools:context=".MathArithOperationContentPage"
+    android:background="@drawable/mathcontent3">
 
     <TextView
         android:id="@+id/ArOperTextView3"
