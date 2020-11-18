@@ -32,25 +32,29 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="275dp"
+                android:layout_height="258dp"
                 android:src="@drawable/mathgcf2" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="297dp"
+                android:layout_height="265dp"
                 android:src="@drawable/mathgcf3" />
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="297dp"
+                android:layout_height="303dp"
                 android:src="@drawable/mathgcf4" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="297dp"
                 android:src="@drawable/mathgcf5" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="297dp"
                 android:src="@drawable/mathgcf6" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,22 +64,26 @@
                 android:textSize="25dp" />
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="229dp"
+                android:layout_height="541dp"
                 android:src="@drawable/mathlcm1" />
+
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="258dp"
+                android:layout_height="325dp"
                 android:src="@drawable/mathlcm2" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="297dp"
+                android:layout_height="336dp"
                 android:src="@drawable/mathlcm3" />
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="297dp"
+                android:layout_height="309dp"
                 android:src="@drawable/mathlcm4" />
+
+
 
 
         </LinearLayout>
