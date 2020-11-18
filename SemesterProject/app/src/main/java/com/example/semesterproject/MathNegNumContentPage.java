@@ -12,6 +12,7 @@ public class MathNegNumContentPage extends AppCompatActivity {
     private TextView nnOper1;
 
     private TextView nnOper3;
+    private TextView nnOper2;
     private Button nn1Button;
     private Button nn2Button;
     private Button nn3Button;
@@ -22,6 +23,7 @@ public class MathNegNumContentPage extends AppCompatActivity {
         setContentView(R.layout.activity_math_neg_num_content_page);
         nnOper1=(TextView)findViewById(R.id.NNumTextView1);
         nnOper3=(TextView)findViewById(R.id.NNumTextView3);
+        nnOper2=(TextView)findViewById(R.id.NN2TextView);
         nn1Button=(Button)findViewById(R.id.buttonNN1);
         nn2Button=(Button)findViewById(R.id.buttonNN2);
         nn3Button=(Button)findViewById(R.id.buttonNN3);
@@ -50,12 +52,21 @@ public class MathNegNumContentPage extends AppCompatActivity {
                 openNN3Topic();
             }
         });
+        nnOper2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openNN2Topic();
+            }
+        });
     }
     public void openNN1Topic(){
         Intent intent = new Intent(this, MathNN1.class);
         startActivity(intent);
     }
-    
+    public void openNN2Topic(){
+        Intent intent = new Intent(this, MathNN2.class);
+        startActivity(intent);
+    }
+
     public void openNN3Topic(){
         Intent intent = new Intent(this, MathNN3.class);
         startActivity(intent);
