@@ -8,13 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class MathPropNumContentPage extends AppCompatActivity {
     private TextView pn1topic;
     private TextView pn2topic;
     private TextView pn3topic;
+    private TextView lcm;
     private Button pn1quiz;
     private Button pn2quiz;
     private Button pn3quiz;
+    private TextView pntopicx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +27,16 @@ public class MathPropNumContentPage extends AppCompatActivity {
         pn1topic=(TextView)findViewById(R.id.textViewPN1);
         pn2topic=(TextView)findViewById(R.id.textViewPN2);
         pn3topic=(TextView)findViewById(R.id.textViewPN3);
+        pntopicx=(TextView)findViewById(R.id.textViewPNx);
         pn1quiz=(Button)findViewById(R.id.buttonPN1);
         pn2quiz=(Button) findViewById(R.id.buttonPN2);
         pn3quiz=(Button) findViewById(R.id.buttonPN3);
+        lcm=(TextView)findViewById(R.id.LCM);
+        lcm.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openPN4topic();
+            }
+        });
         pn1topic.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 openPN1topic();
@@ -39,6 +50,11 @@ public class MathPropNumContentPage extends AppCompatActivity {
         pn3topic.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 openPN3topic();
+            }
+        });
+        pntopicx.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openPNxtopic();
             }
         });
         pn1quiz.setOnClickListener(new View.OnClickListener(){
@@ -67,6 +83,14 @@ public class MathPropNumContentPage extends AppCompatActivity {
     }
     public void openPN3topic(){
         Intent intent = new Intent(this, MathPN3.class);
+        startActivity(intent);
+    }
+    public void openPN4topic(){
+        Intent intent = new Intent(this, MathPN4.class);
+        startActivity(intent);
+    }
+    public void openPNxtopic(){
+        Intent intent = new Intent(this, MathPNx.class);
         startActivity(intent);
     }
     public void openPN1quiz(){
