@@ -14,7 +14,8 @@
         <activity android:name=".MathPN4" />
         <activity android:name=".MathAR3" />
         <activity android:name=".RateContentPage" />
-        <activity android:name=".MathPropNumContentPage" />
+        <activity android:name=".MathPropNumContentPage"
+            />
         <activity android:name=".MathPN3" />
         <activity android:name=".MathPN2" />
         <activity android:name=".MathPN1" />
@@ -26,13 +27,15 @@
         <activity android:name=".MathNNQuiz1" />
         <activity android:name=".MathNN3" />
         <activity android:name=".MathNN1" />
-        <activity android:name=".MathNegNumContentPage" />
+        <activity android:name=".MathNegNumContentPage"
+            />
         <activity android:name=".MathAR2" />
         <activity android:name=".MathAR1" />
         <activity android:name=".MathARQuiz3" />
         <activity android:name=".MathARQuiz2" />
         <activity android:name=".MathARQuiz1" />
-        <activity android:name=".MathArithOperationContentPage" />
+        <activity android:name=".MathArithOperationContentPage"
+            />
         <activity android:name=".MathPercentageContent" />
         <activity android:name=".MathQuizPercentage" />
         <activity android:name=".MathRateQuiz" />
@@ -40,10 +43,14 @@
             android:name=".RatioContentPage"
             android:label="@string/title_activity_ratio_content_page"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MathContentActivity" />
+        <activity android:name=".MathContentActivity"
+            />
         <activity android:name=".MathRatioQuiz1" />
-        <activity android:name=".MathRatioPage" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MathRatioPage"
+            />
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
