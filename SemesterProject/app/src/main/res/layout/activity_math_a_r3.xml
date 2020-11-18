@@ -48,10 +48,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="297dp"
                 android:src="@drawable/mathorder5" />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="297dp"
-                android:src="@drawable/mathorder6" />
 
         </LinearLayout>
 
