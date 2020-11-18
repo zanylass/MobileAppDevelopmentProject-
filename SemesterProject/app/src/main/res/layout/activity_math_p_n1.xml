@@ -51,23 +51,7 @@
                 android:layout_height="230dp"
                 android:src="@drawable/mathprop5" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="261dp"
-                android:src="@drawable/mathprop6" />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="297dp"
-                android:src="@drawable/mathprop7" />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="297dp"
-                android:src="@drawable/mathprop8" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="245dp"
-                android:src="@drawable/mathprop9" />
 
         </LinearLayout>
 
