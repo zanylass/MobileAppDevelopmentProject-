@@ -50,11 +50,6 @@
                 android:layout_height="297dp"
                 android:src="@drawable/mathexponent5" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="261dp"
-                android:src="@drawable/mathexponent6" />
-
         </LinearLayout>
 
 
