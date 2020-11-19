@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
         <activity android:name=".MathNN2"></activity>
         <activity android:name=".MathPNx" />
         <activity android:name=".MathPN4" />
@@ -48,7 +51,8 @@
         <activity android:name=".MathContentActivity"
             android:theme="@style/AppTheme.NoActionBar"
             />
-        <activity android:name=".MathRatioQuiz1" />
+        <activity android:name=".MathRatioQuiz1"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".MathRatioPage"
             android:theme="@style/AppTheme.NoActionBar"
             />
