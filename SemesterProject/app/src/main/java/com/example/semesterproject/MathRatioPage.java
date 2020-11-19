@@ -24,7 +24,7 @@ public class MathRatioPage extends AppCompatActivity {
     public Button quiz1;
     public Button quiz2;
     public Button quiz3;
-    private TextView textViewHighScore;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class MathRatioPage extends AppCompatActivity {
         ratioPage=(TextView)findViewById(R.id.RatioContent);
         ratePage=(TextView)findViewById(R.id.ratesContent);
         percentPage=(TextView)findViewById(R.id.textViewPercentage);
-        textViewHighScore=(TextView)findViewById(R.id.textViewHighScoreQuiz1);
+
         loadHighscore();
         quiz1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,12 +110,12 @@ public class MathRatioPage extends AppCompatActivity {
     private void loadHighscore(){
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         highscore = prefs.getInt(KEY_HIGHSCORE, 0);
-        textViewHighScore.setText("Highscore: " + highscore);
+        //textViewHighScore.setText("Highscore: " + highscore);
     }
 
     private void updateHighScore(int highscoreNew){
         highscore=highscoreNew;
-        textViewHighScore.setText("Highscore: "+ highscore);
+        //textViewHighScore.setText("Highscore: "+ highscore);
 
         SharedPreferences prefs=getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor=prefs.edit();
