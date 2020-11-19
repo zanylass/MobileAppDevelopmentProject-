@@ -64,7 +64,7 @@ public class MathQuizPercentage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_math_quiz_percentage);
+        setContentView(R.layout.activity_math_ratio_quiz1);
         checkButton=(Button)findViewById(R.id.buttonCheck);
         textViewQuestion=(TextView)findViewById(R.id.text_view_question1);
         textViewScore=(TextView)findViewById(R.id.text_view_score);
