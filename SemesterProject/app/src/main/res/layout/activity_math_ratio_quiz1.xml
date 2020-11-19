@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MathRatioQuiz1">
+    tools:context=".MathRatioQuiz1"
+    android:background="@drawable/mathquiz">
 
     <TextView
         android:id="@+id/text_view_score"
@@ -77,6 +78,7 @@
         android:layout_marginTop="51dp"
         android:freezesText="true"
         android:text="Choose 1 answer:"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.336"
