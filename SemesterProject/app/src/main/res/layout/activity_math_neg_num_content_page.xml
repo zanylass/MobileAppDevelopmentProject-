@@ -81,6 +81,7 @@
         android:layout_width="271dp"
         android:layout_height="61dp"
         android:text="Introduction to Negative Numbers"
+        android:textAlignment="center"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,8 +91,8 @@
 
     <TextView
         android:id="@+id/NN2TextView"
-        android:layout_width="188dp"
-        android:layout_height="54dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Negative Numbers"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
