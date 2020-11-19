@@ -12,6 +12,7 @@
         android:layout_width="250dp"
         android:layout_height="31dp"
         android:text="Arithmetic Operations"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -24,29 +25,33 @@
         android:layout_width="205dp"
         android:layout_height="32dp"
         android:text="Negative numbers"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.66"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446" />
+        app:layout_constraintVertical_bias="0.469" />
 
     <TextView
         android:id="@+id/textViewPropNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Properties of numbers"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintVertical_bias="0.557" />
 
     <TextView
         android:id="@+id/textViewRatios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ratios, rates&amp; percentages"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
