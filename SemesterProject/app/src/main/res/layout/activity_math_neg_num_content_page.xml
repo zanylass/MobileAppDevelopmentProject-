@@ -5,65 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MathNegNumContentPage"
-    android:background="@drawable/mathcontent4">
+    android:background="@drawable/mathcontent41">
 
     <TextView
         android:id="@+id/NNumTextView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Absolute Value"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
+        app:layout_constraintVertical_bias="0.558" />
 
     <Button
         android:id="@+id/buttonNN1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
         android:shadowColor="#FFFFFF"
         android:text="Start Quiz 1"
         android:textColor="#040303"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.253" />
 
     <Button
         android:id="@+id/buttonNN2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
         android:shadowColor="#FFFFFF"
         android:text="Start Quiz 2"
         android:textColor="#040303"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.465" />
 
     <Button
         android:id="@+id/buttonNN3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="153dp"
+        android:layout_height="58dp"
         android:shadowColor="#FFFFFF"
         android:text="Start Quiz 3"
         android:textColor="#040303"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.66" />
 
     <TextView
         android:id="@+id/textViewHighScoreQuiz1"
@@ -79,28 +78,28 @@
 
     <TextView
         android:id="@+id/NNumTextView1"
-        android:layout_width="296dp"
-        android:layout_height="47dp"
+        android:layout_width="271dp"
+        android:layout_height="61dp"
         android:text="Introduction to Negative Numbers"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.155" />
 
     <TextView
         android:id="@+id/NN2TextView"
-        android:layout_width="171dp"
-        android:layout_height="39dp"
+        android:layout_width="188dp"
+        android:layout_height="54dp"
         android:text="Negative Numbers"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintVertical_bias="0.361" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
