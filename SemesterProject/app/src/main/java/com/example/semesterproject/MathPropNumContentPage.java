@@ -11,6 +11,8 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -25,7 +27,7 @@ public class MathPropNumContentPage extends AppCompatActivity {
     private Button pn3quiz;
     private TextView pntopicx;
 
-    //
+
     private boolean mIsBound = false;
     private MusicService mServ;
     private ServiceConnection Scon =new ServiceConnection(){
@@ -68,6 +70,8 @@ public class MathPropNumContentPage extends AppCompatActivity {
         pn2quiz=(Button) findViewById(R.id.buttonPN2);
         pn3quiz=(Button) findViewById(R.id.buttonPN3);
         lcm=(TextView)findViewById(R.id.LCM);
+
+
         lcm.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 openPN4topic();
@@ -132,6 +136,8 @@ public class MathPropNumContentPage extends AppCompatActivity {
             }
         });
         mHomeWatcher.startWatch();
+
+
 
     }
     public void openPN1topic(){
