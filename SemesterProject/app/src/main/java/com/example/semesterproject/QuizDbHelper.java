@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QuizDbHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "MathRatioQuiz.db";
+    private static final String DATABASE_NAME = "MathRatioQuiz1.db";
     private static final int DATABASE_VERSION = 1;
     private SQLiteDatabase db;
     public QuizDbHelper(Context context) {
@@ -47,7 +47,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q3);
         Question q4 = new Question("Dean loves rocks! He has 6 pieces of granite, 3 pieces of marble, 14 pieces of sandstone, and 1 piece of slate. What is the ratio of pieces of sandstone to pieces of marble in Dean's collection?", "A: 14:6", "B: 3:24", "C: 14:3","D: 24:3", 3);
         addQuestion(q4);
-        Question q5 = new Question("An artist used 6 tubes of red paint, 2 tubes of yellow paint, 13 tubes of white paint, and 9 tubes of blue paint for a mural. What is the ratio of tubes of red paint to bes of white paint?", "A: 6 for every 9", "B: 6 for every 13", "C: 6 for every 30","D: 13 for every 6", 2);
+        Question q5 = new Question("An artist used 6 tubes of red paint, 2 tubes of yellow paint, 13 tubes of white paint, and 9 tubes of blue paint for a mural. What is the ratio of tubes of red paint to tubes of white paint?", "A: 6 for every 9", "B: 6 for every 13", "C: 6 for every 30","D: 13 for every 6", 2);
         addQuestion(q5);
         Question q6 = new Question("For the perfect cup of hot cocoa, Eva uses 3 scoops of hot cocoa mix, 10 miniature marshmallows, and 8 ounces of water. What is the ratio of scoops of hot cocoa to miniature marshmallows?", "A: 3 to 8", "B: 3 to 10", "C: 8 to 3","D: 3 to 18", 2);
         addQuestion(q6);
