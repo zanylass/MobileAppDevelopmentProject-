@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.semesterproject">
 
     <supports-screens
@@ -15,48 +16,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
+
         <activity android:name=".activity_science_matter_content"></activity>
         <activity android:name=".activity_science_content" />
-        <activity android:name=".MathNN2" />
-        <activity android:name=".MathPNx" />
-        <activity android:name=".MathPN4" />
-        <activity android:name=".MathAR3" />
-        <activity android:name=".RateContentPage" />
-        <activity
-            android:name=".MathPropNumContentPage"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MathPN3" />
-        <activity android:name=".MathPN2" />
-        <activity android:name=".MathPN1" />
-        <activity android:name=".MathPropN3Quiz" />
-        <activity android:name=".MathPropN2Quiz" />
-        <activity android:name=".MathPropN1Quiz" />
-        <activity android:name=".MathNNQuiz3" />
-        <activity android:name=".MathNNQuiz2" />
-        <activity android:name=".MathNNQuiz1" />
-        <activity android:name=".MathNN3" />
-        <activity android:name=".MathNN1" />
-        <activity
-            android:name=".MathNegNumContentPage"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MathAR2" />
-        <activity android:name=".MathAR1" />
-        <activity android:name=".MathARQuiz3" />
-        <activity android:name=".MathARQuiz2" />
-        <activity android:name=".MathARQuiz1" />
-        <activity
-            android:name=".MathArithOperationContentPage"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MathPercentageContent" />
-        <activity android:name=".MathQuizPercentage" />
-        <activity android:name=".MathRateQuiz" />
-=======
+
         <service
             android:name=".MusicService"
             android:enabled="true" />
         <activity android:name=".MathNN2"
-            android:screenOrientation = "portrait"></activity>
+            android:screenOrientation = "portrait"
+            tools:ignore="DuplicateActivity"></activity>
         <activity android:name=".MathPNx"
             android:screenOrientation = "portrait"/>
         <activity android:name=".MathPN4"
@@ -114,23 +83,15 @@
             android:screenOrientation = "portrait"/>
         <activity android:name=".MathRateQuiz"
             android:screenOrientation = "portrait"/>
->>>>>>> 3fb6893e8012257227b1309295f4dc06fb4ffede
         <activity
             android:name=".RatioContentPage"
             android:screenOrientation = "portrait"
             android:label="@string/title_activity_ratio_content_page"
             android:theme="@style/AppTheme.NoActionBar" />
-<<<<<<< HEAD
-        <activity
-            android:name=".MathContentActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MathRatioQuiz1" />
-        <activity
-            android:name=".MathRatioPage"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MainActivity"
-=======
+
+
+
+
         <activity android:name=".MathContentActivity"
             android:screenOrientation = "portrait"
             android:theme="@style/AppTheme.NoActionBar"
@@ -143,9 +104,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             />
         <activity android:name=".MainActivity"
-            android:screenOrientation = "portrait"
->>>>>>> 3fb6893e8012257227b1309295f4dc06fb4ffede
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -153,5 +112,7 @@
             </intent-filter>
         </activity>
     </application>
+
+
 
 </manifest>
