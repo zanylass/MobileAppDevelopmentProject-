@@ -12,6 +12,8 @@ import android.os.PowerManager;
 import android.view.View;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+
 public class MathContentActivity extends AppCompatActivity {
     public TextView ratios;
     public TextView operatios;
@@ -52,6 +54,9 @@ public class MathContentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_content);
+        //sliding left to parent activity
+        Slidr.attach(this);
+
         ratios=(TextView) findViewById(R.id.textViewRatios);
         operatios=(TextView) findViewById(R.id.textViewArOperations);
         negNumbers=(TextView) findViewById(R.id.textViewNegNum);
