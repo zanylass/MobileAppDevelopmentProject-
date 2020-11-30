@@ -20,9 +20,9 @@ import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
     public Button mathButton;
-<<<<<<< HEAD
+
     public Button scienceButton;
-=======
+
 
     //
     private boolean mIsBound = false;
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     //
->>>>>>> 3fb6893e8012257227b1309295f4dc06fb4ffede
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,14 +69,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-<<<<<<< HEAD
+
         scienceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openScienceContent();
             }
         });
-=======
+
 
 
         //
@@ -103,20 +103,20 @@ public class MainActivity extends AppCompatActivity {
         });
         mHomeWatcher.startWatch();
 
->>>>>>> 3fb6893e8012257227b1309295f4dc06fb4ffede
+
     }
 
     public void openMathContent() {
         Intent intent = new Intent(this, MathContentActivity.class);
         startActivity(intent);
     }
-<<<<<<< HEAD
+
 
     public void openScienceContent(){
         Intent intent = new Intent(this, activity_science_content.class);
         startActivity(intent);
     }
-=======
+
     //
     @Override
     protected void onDestroy() {
@@ -156,5 +156,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
->>>>>>> 3fb6893e8012257227b1309295f4dc06fb4ffede
+
 }
