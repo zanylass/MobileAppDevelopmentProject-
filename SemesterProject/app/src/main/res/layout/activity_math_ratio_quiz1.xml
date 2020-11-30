@@ -4,38 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MathRatioQuiz1"
-    android:background="@drawable/mathquiz">
+    android:background="@drawable/mathquiz"
+    tools:context=".MathRatioQuiz1">
 
-    <TextView
-        android:id="@+id/text_view_score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Score: 0"
-        android:textColor="@android:color/black"
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/radio_group"
         android:freezesText="true"
+        android:text="Confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044"
-        />
+        app:layout_constraintVertical_bias="0.884" />
 
-    <TextView
-        android:id="@+id/text_view_question_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_score"
-        android:freezesText="true"
-        android:text="Question: 1/x"
-        android:textColor="@android:color/black"
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="360dp"
+        android:layout_height="168dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.728">
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Option 1" />
+
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Option 2" />
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Option 3" />
+
+        <RadioButton
+            android:id="@+id/radio_button4"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Option 4" />
+
+
+    </RadioGroup>
 
 
     <TextView
@@ -86,64 +115,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955" />
 
-    <RadioGroup
-        android:id="@+id/radio_group"
-        android:layout_width="360dp"
-        android:layout_height="168dp"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728">
-
-        <RadioButton
-            android:id="@+id/radio_button1"
-            android:layout_width="301dp"
-            android:layout_height="wrap_content"
-            android:freezesText="true"
-            android:text="Option 1" />
-
-
-        <RadioButton
-            android:id="@+id/radio_button2"
-            android:layout_width="303dp"
-            android:layout_height="wrap_content"
-            android:freezesText="true"
-            android:text="Option 2" />
-
-        <RadioButton
-            android:id="@+id/radio_button3"
-            android:layout_width="303dp"
-            android:layout_height="wrap_content"
-            android:freezesText="true"
-            android:text="Option 3" />
-
-        <RadioButton
-            android:id="@+id/radio_button4"
-            android:layout_width="301dp"
-            android:layout_height="wrap_content"
-            android:freezesText="true"
-            android:text="Option 4" />
-
-
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/buttonCheck"
-        android:layout_width="293dp"
-        android:layout_height="54dp"
-        android:layout_below="@id/radio_group"
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:freezesText="true"
-        android:text="Confirm"
+        android:text="Score: 0"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_score"
+        android:freezesText="true"
+        android:text="Question: 1/x"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
