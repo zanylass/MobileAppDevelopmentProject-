@@ -94,7 +94,9 @@
 
         <activity android:name=".MathContentActivity"
             android:screenOrientation = "portrait"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:parentActivityName=".MainActivity"
+
             />
         <activity android:name=".MathRatioQuiz1"
             android:screenOrientation = "portrait"
