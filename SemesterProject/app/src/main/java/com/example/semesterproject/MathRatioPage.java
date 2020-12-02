@@ -15,6 +15,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+
 public class MathRatioPage extends AppCompatActivity {
     private static final int REQUEST_CODE_QUIZ=1;
 
@@ -66,6 +68,8 @@ public class MathRatioPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_ratio_page);
+        //sliding left to parent activity
+        Slidr.attach(this);
         quiz1=(Button) findViewById(R.id.buttonQuiz1);
         quiz2=(Button) findViewById(R.id.buttonQuiz2);
         quiz3=(Button) findViewById(R.id.buttonQuiz3);
