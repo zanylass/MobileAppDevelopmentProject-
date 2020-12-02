@@ -15,6 +15,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.r0adkll.slidr.Slidr;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -67,6 +69,8 @@ public class MathRatioQuiz1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_ratio_quiz1);
+        //sliding left to parent activity
+        Slidr.attach(this);
         checkButton=(Button)findViewById(R.id.buttonCheck);
         textViewQuestion=(TextView)findViewById(R.id.text_view_question1);
         textViewScore=(TextView)findViewById(R.id.text_view_score);
