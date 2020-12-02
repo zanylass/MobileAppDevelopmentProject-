@@ -16,81 +16,105 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".activity_science_matter_content"></activity>
+        <activity android:name=".activity_science_OS2_content"/>
+        <activity android:name=".activity_science_OS1_content" />
+        <activity android:name=".activity_science_matter_content" />
         <activity android:name=".activity_science_content" />
 
         <service
             android:name=".MusicService"
             android:enabled="true" />
-        <activity android:name=".MathNN2"
-            android:screenOrientation = "portrait"
-            tools:ignore="DuplicateActivity"></activity>
-        <activity android:name=".MathPNx"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathPN4"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathAR3"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".RateContentPage"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathPropNumContentPage"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathPN3"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathPN2"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathPN1"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathPropN3Quiz"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathPropN2Quiz"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathPropN1Quiz"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathNNQuiz3"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathNNQuiz2"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathNNQuiz1"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathNN3"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathNN1"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathNegNumContentPage"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation = "portrait"
-            />
-        <activity android:name=".MathAR2"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathAR1"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathARQuiz3"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathARQuiz2"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathARQuiz1"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathArithOperationContentPage"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation = "portrait"
-            />
-        <activity android:name=".MathPercentageContent"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathQuizPercentage"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MathRateQuiz"
-            android:screenOrientation = "portrait"/>
+
+        <activity
+            android:name=".MathNN2"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".MathPNx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathPN4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathAR3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RateContentPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathPropNumContentPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MathPN3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathPN2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathPN1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathPropN3Quiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathPropN2Quiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathPropN1Quiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathNNQuiz3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathNNQuiz2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathNNQuiz1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathNN3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathNN1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathNegNumContentPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MathAR2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathAR1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathARQuiz3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathARQuiz2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathARQuiz1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathArithOperationContentPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MathPercentageContent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathQuizPercentage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MathRateQuiz"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RatioContentPage"
-            android:screenOrientation = "portrait"
             android:label="@string/title_activity_ratio_content_page"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
-
 
         <activity android:name=".MathContentActivity"
             android:screenOrientation = "portrait"
@@ -106,15 +130,13 @@
             android:theme="@style/AppTheme.NoActionBar"
             />
         <activity android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation = "portrait"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+
     </application>
-
-
 
 </manifest>
