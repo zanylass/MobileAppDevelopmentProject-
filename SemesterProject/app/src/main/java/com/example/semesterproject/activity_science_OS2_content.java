@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+
 public class activity_science_OS2_content extends AppCompatActivity {
 
     private TextView NS = (TextView) findViewById(R.id.textViewNervous);
@@ -23,6 +25,8 @@ public class activity_science_OS2_content extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science__o_s2_content);
+        //sliding left to parent activity
+        Slidr.attach(this);
 
         NS.setOnClickListener(new View.OnClickListener() {
             @Override
