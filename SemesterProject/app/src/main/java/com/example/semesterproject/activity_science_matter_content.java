@@ -21,6 +21,7 @@ public class activity_science_matter_content extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_matter_content);
+
         solids.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
