@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+
 public class MathNegNumContentPage extends AppCompatActivity {
     private TextView nnOper1;
 
@@ -57,6 +59,8 @@ public class MathNegNumContentPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_neg_num_content_page);
+        //sliding left to parent activity
+        Slidr.attach(this);
         nnOper1=(TextView)findViewById(R.id.NNumTextView1);
         nnOper3=(TextView)findViewById(R.id.NNumTextView3);
         nnOper2=(TextView)findViewById(R.id.NN2TextView);
