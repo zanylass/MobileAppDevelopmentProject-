@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+
 public class activity_science_matter_content extends AppCompatActivity {
 
     private TextView solids = (TextView) findViewById(R.id.textViewSolids);
@@ -21,6 +23,8 @@ public class activity_science_matter_content extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_matter_content);
+        //sliding left to parent activity
+        Slidr.attach(this);
 
         solids.setOnClickListener(new View.OnClickListener() {
             @Override
