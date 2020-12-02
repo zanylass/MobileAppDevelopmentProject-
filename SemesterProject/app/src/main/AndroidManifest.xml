@@ -16,7 +16,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_science_OS2_content"/>
+        <activity android:name=".activity_science_os1_quiz_skeletal_system"></activity>
+        <activity android:name=".activity_science_os1_quiz_muscular_system" />
+        <activity android:name=".activity_science_os1_quiz_digestive_system" />
+        <activity android:name=".activity_science_os2_quiz_excretory_system" />
+        <activity android:name=".activity_science_os2_quiz_respiratory_system" />
+        <activity android:name=".activity_science_os2_quiz_nervous_system" />
+        <activity android:name=".activity_science_os2_quiz_circulatory_system" />
+        <activity
+            android:name=".activity_science_os2_excretory_system"
+            android:label="@string/title_activity_science_os2_excretory_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_science_os2_respiratory_system"
+            android:label="@string/title_activity_science_os2_respiratory_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_science_os2_nervous_system"
+            android:label="@string/title_activity_science_os2_nervous_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_science_os2_circulatory_system"
+            android:label="@string/title_activity_science_os2_circulatory_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_science_os1_digestive_system"
+            android:label="@string/title_activity_science_os1_digestive_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_science_os1_skeletal_system"
+            android:label="@string/title_activity_science_os1_skeletal_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_science_os1_muscular_system"
+            android:label="@string/title_activity_science_os1_muscular_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_science_matter_quiz_gases" />
+        <activity android:name=".activity_science_matter_quiz_liquids" />
+        <activity android:name=".activity_science_matter_quiz_solids" />
+        <activity
+            android:name=".activity_science_matter_gases"
+            android:label="@string/title_activity_science_matter_gases"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_science_matter_liquids"
+            android:label="@string/title_activity_science_matter_liquids"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_science_matter_solids"
+            android:label="@string/title_activity_science_matter_solids"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_science_OS2_content" />
         <activity android:name=".activity_science_OS1_content" />
         <activity android:name=".activity_science_matter_content" />
         <activity android:name=".activity_science_content" />
@@ -115,28 +165,28 @@
             android:label="@string/title_activity_ratio_content_page"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".MathContentActivity"
-            android:screenOrientation = "portrait"
-            android:theme="@style/AppTheme.SlideActivityTheme"
+        <activity
+            android:name=".MathContentActivity"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SlideActivityTheme" />
+        <activity
+            android:name=".MathRatioQuiz1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MathRatioPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
 
-            />
-        <activity android:name=".MathRatioQuiz1"
-            android:screenOrientation = "portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".MathRatioPage"
-            android:screenOrientation = "portrait"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
-        <activity android:name=".MainActivity"
-            android:screenOrientation = "portrait"/>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
     </application>
 
 </manifest>
