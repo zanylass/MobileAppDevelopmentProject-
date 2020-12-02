@@ -20,7 +20,6 @@ import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
     public Button mathButton;
-
     public Button scienceButton;
 
 
