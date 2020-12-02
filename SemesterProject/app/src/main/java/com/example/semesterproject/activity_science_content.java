@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+
 import org.w3c.dom.Text;
 
 public class activity_science_content extends AppCompatActivity {
@@ -18,6 +20,8 @@ public class activity_science_content extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_content);
+        //sliding left to parent activity
+        Slidr.attach(this);
 
         matter = (TextView) findViewById(R.id.textViewMatter);
         organSystems1 = (TextView) findViewById(R.id.textViewOS1);
