@@ -45,4 +45,14 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_ratio_content_page">ScrollingActivity</string>
+    <string name="title_activity_science_matter_solids">ScrollingActivity</string>
+    <string name="title_activity_science_matter_liquids">ScrollingActivity</string>
+    <string name="title_activity_science_matter_gases">ScrollingActivity</string>
+    <string name="title_activity_science_os1_muscular_system">ScrollingActivity</string>
+    <string name="title_activity_science_os1_skeletal_system">ScrollingActivity</string>
+    <string name="title_activity_science_os1_digestive_system">ScrollingActivity</string>
+    <string name="title_activity_science_os2_circulatory_system">ScrollingActivity</string>
+    <string name="title_activity_science_os2_nervous_system">ScrollingActivity</string>
+    <string name="title_activity_science_os2_respiratory_system">ScrollingActivity</string>
+    <string name="title_activity_science_os2_excretory_system">ScrollingActivity</string>
 </resources>
