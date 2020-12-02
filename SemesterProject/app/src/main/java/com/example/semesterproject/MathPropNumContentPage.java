@@ -15,6 +15,8 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+
 import org.w3c.dom.Text;
 
 public class MathPropNumContentPage extends AppCompatActivity {
@@ -62,6 +64,8 @@ public class MathPropNumContentPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_prop_num_content_page);
+        //sliding left to parent activity
+        Slidr.attach(this);
         pn1topic=(TextView)findViewById(R.id.textViewPN1);
         pn2topic=(TextView)findViewById(R.id.textViewPN2);
         pn3topic=(TextView)findViewById(R.id.textViewPN3);
