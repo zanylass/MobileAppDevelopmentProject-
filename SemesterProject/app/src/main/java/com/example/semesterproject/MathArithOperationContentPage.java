@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+
 public class MathArithOperationContentPage extends AppCompatActivity {
     private TextView arOper1;
     private TextView arOper2;
@@ -56,6 +58,8 @@ public class MathArithOperationContentPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_arith_operation_content_page);
+        //sliding left to parent activity
+        Slidr.attach(this);
         arOper1=(TextView)findViewById(R.id.ArOperTextView1);
         arOper2=(TextView)findViewById(R.id.ArOperTextView2);
         arOper3=(TextView)findViewById(R.id.ArOperTextView3);
