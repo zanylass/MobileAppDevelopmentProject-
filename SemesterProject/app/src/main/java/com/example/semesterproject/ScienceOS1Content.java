@@ -13,8 +13,8 @@ import com.r0adkll.slidr.Slidr;
 
 public class ScienceOS1content extends AppCompatActivity {
 
-    public TextView NS = findViewById(R.id.textViewNervousSystem);
-    public TextView RS = findViewById(R.id.textViewRespiratorySystem);
+    public TextView NS ;
+    public TextView RS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,9 @@ public class ScienceOS1content extends AppCompatActivity {
         setContentView(R.layout.activity_science_o_s1content);
         //sliding left to parent activity
         Slidr.attach(this);
+        NS = (TextView) findViewById(R.id.textViewNervousSystem);
+        RS = (TextView) findViewById(R.id.textViewRespiratorySystem);
+
         NS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
