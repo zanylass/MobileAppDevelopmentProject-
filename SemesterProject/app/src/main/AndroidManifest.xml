@@ -18,6 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
         <activity android:name=".activity_science_os1_quiz_skeletal_system"></activity>
         <activity android:name=".activity_science_os1_quiz_muscular_system" />
         <activity android:name=".activity_science_os1_quiz_digestive_system" />
@@ -28,61 +31,76 @@
         <activity
             android:name=".activity_science_os2_excretory_system"
             android:label="@string/title_activity_science_os2_excretory_system"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity_science_os2_respiratory_system"
             android:label="@string/title_activity_science_os2_respiratory_system"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme"/>
         <activity
             android:name=".activity_science_os2_nervous_system"
             android:label="@string/title_activity_science_os2_nervous_system"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".activity_science_os2_circulatory_system"
             android:label="@string/title_activity_science_os2_circulatory_system"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".activity_science_os1_digestive_system"
             android:label="@string/title_activity_science_os1_digestive_system"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".activity_science_os1_skeletal_system"
             android:label="@string/title_activity_science_os1_skeletal_system"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".activity_science_os1_muscular_system"
             android:label="@string/title_activity_science_os1_muscular_system"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity android:name=".activity_science_matter_quiz_gases"
-            android:theme="@style/AppTheme.SlideActivityTheme"/>
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity_science_matter_quiz_liquids"
-            android:theme="@style/AppTheme.SlideActivityTheme"/>
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity_science_matter_quiz_solids"
-            android:theme="@style/AppTheme.SlideActivityTheme"/>
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity_science_matter_gases"
             android:label="@string/title_activity_science_matter_gases"
-            android:theme="@style/AppTheme.SlideActivityTheme" />
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity_science_matter_liquids"
             android:label="@string/title_activity_science_matter_liquids"
-            android:theme="@style/AppTheme.SlideActivityTheme" />
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity_science_matter_solids"
             android:label="@string/title_activity_science_matter_solids"
-            android:theme="@style/AppTheme.SlideActivityTheme" />
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity_science_OS2_content"
-            android:theme="@style/AppTheme.SlideActivityTheme"/>
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity_science_OS1_content"
-            android:theme="@style/AppTheme.SlideActivityTheme"/>
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity_science_matter_content"
-            android:theme="@style/AppTheme.SlideActivityTheme"/>
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity_science_content"
-            android:theme="@style/AppTheme.SlideActivityTheme"/>
+            android:theme="@style/AppTheme.SlideActivityTheme"
+            android:screenOrientation="portrait"/>
 
-        <service
-            android:name=".MusicService"
-            android:enabled="true" />
+
 
         <activity
             android:name=".MathNN2"
