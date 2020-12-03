@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.r0adkll.slidr.Slidr;
 
-public class ScienceOS2content extends AppCompatActivity {
+public class ScienceOS2Content extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
