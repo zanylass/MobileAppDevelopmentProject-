@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.r0adkll.slidr.Slidr;
 
-public class ScienceOS1content extends AppCompatActivity {
+public class ScienceOS1Content extends AppCompatActivity {
 
     public TextView NS = findViewById(R.id.textViewNervousSystem);
     public TextView RS = findViewById(R.id.textViewRespiratorySystem);
