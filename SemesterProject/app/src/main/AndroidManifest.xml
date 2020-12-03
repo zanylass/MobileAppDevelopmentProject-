@@ -18,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScienceOS2content"></activity>
+        <activity android:name=".ScienceOS1RespiratorySystem"></activity>
+        <activity android:name=".ScienceOS1NervousSystem" />
+        <activity android:name=".ScienceOS2content" />
         <activity android:name=".ScienceOS1content" />
         <activity android:name=".ScienceMatterContent" />
         <activity
