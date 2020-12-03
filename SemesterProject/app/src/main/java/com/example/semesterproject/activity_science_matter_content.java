@@ -25,13 +25,21 @@ public class activity_science_matter_content extends AppCompatActivity {
         setContentView(R.layout.activity_science_matter_content);
         //sliding left to parent activity
         Slidr.attach(this);
+        solids = (TextView) findViewById(R.id.textViewSolids);
+        liquids = (TextView) findViewById(R.id.textViewLiquids);
+        gases = (TextView) findViewById(R.id.textViewGases);
+        btnSolids = (Button) findViewById(R.id.btnQuizSolids);
+        btnLiquids = (Button) findViewById(R.id.btnQuizLiquids);
+        btnGases = (Button) findViewById(R.id.btnQuizGases);
 
-        solids.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
+        solids.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
                 openMatterSolids();
             }
         });
+
+
 
         btnSolids.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,28 +76,28 @@ public class activity_science_matter_content extends AppCompatActivity {
             }
         });
     }
-
-    private void openMatterSolids() {
+    public void openMatterSolids(){
         Intent intent = new Intent(this, activity_science_matter_solids.class);
         startActivity(intent);
     }
-    private void openQuizSolids() {
+
+    public void openQuizSolids() {
         Intent intent = new Intent(this, activity_science_matter_quiz_solids.class);
         startActivity(intent);
     }
-    private void openMatterLiquids() {
+    public void openMatterLiquids() {
         Intent intent = new Intent(this, activity_science_matter_liquids.class);
         startActivity(intent);
     }
-    private void openQuizLiquids() {
+    public void openQuizLiquids() {
         Intent intent = new Intent(this, activity_science_matter_quiz_liquids.class);
         startActivity(intent);
     }
-    private void openMatterGases() {
+    public void openMatterGases() {
         Intent intent = new Intent(this, activity_science_matter_gases.class);
         startActivity(intent);
     }
-    private void openQuizGases() {
+    public void openQuizGases() {
         Intent intent = new Intent(this, activity_science_matter_quiz_gases.class);
         startActivity(intent);
     }
