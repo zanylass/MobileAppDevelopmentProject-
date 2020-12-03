@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScienceMatterContent"
-    android:background="@drawable/sciencematter">
+    tools:context=".ScienceOS2content"
+    android:background="@drawable/organsystems2">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
