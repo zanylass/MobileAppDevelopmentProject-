@@ -28,6 +28,6 @@ public class ScienceOS1content extends AppCompatActivity {
         //sliding left to parent activity
         Slidr.attach(this);
 
-        
+
     }
 }
