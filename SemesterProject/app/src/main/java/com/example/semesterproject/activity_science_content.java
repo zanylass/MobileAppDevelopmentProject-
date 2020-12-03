@@ -51,15 +51,16 @@ public class activity_science_content extends AppCompatActivity {
     }
 
     private void openScienceMatter() {
-        Intent intent = new Intent(this, activity_science_matter_content.class);
+        Intent intent = new Intent(this, ScienceMatterContent.class);
         startActivity(intent);
     }
+
     private void openOrganSystems1() {
-        Intent intent = new Intent(this, activity_science_OS1_content.class);
+        Intent intent = new Intent(this, ScienceOS1content.class);
         startActivity(intent);
     }
     private void openOrganSystems2() {
-        Intent intent = new Intent(this, activity_science_OS2_content.class);
+        Intent intent = new Intent(this, ScienceOS2content.class);
         startActivity(intent);
     }
 }
