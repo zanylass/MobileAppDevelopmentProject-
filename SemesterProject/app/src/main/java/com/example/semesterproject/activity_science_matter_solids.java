@@ -20,10 +20,7 @@ public class activity_science_matter_solids extends AppCompatActivity {
         setContentView(R.layout.activity_science_matter_solids);
         //sliding left to parent activity
         Slidr.attach(this);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        CollapsingToolbarLayout toolBarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
-        toolBarLayout.setTitle(getTitle());
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
