@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/organsystems2"
-    tools:context=".activity_science_OS1_content">
+    tools:context=".ScienceOS1Content">
 
     <TextView
         android:id="@+id/textViewMuscularSystem"
