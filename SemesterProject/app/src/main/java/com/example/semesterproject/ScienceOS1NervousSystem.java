@@ -6,14 +6,13 @@ import android.os.Bundle;
 
 import com.r0adkll.slidr.Slidr;
 
-public class ScienceOS1NervousSystem extends AppCompatActivity {
+public class ScienceOs1Nervoussystem extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_science_o_s1_nervous_system);
+        setContentView(R.layout.activity_science_os1_nervoussystem);
         //sliding left to parent activity
         Slidr.attach(this);
-
     }
 }
