@@ -5,6 +5,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ScienceMatterContent"
-    android:background="@drawable/sciencematter">
+    android:background="@drawable/science">
 
+    <TextView
+        android:id="@+id/textViewMatterStates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fce6ac"
+        android:text="States of Matter"
+        android:textColor="#3e687e"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <TextView
+        android:id="@+id/textViewMatterChanges1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fce6ac"
+        android:text="Changes in States of Matter 1"
+        android:textColor="#3e687e"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <TextView
+        android:id="@+id/textViewMatterChanges2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fce6ac"
+        android:text="Changes in States of Matter 2"
+        android:textColor="#3e687e"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <Button
+        android:id="@+id/btnQuizMatterStates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C6A32B"
+        android:padding="10dp"
+        android:text="Start quiz 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/c4e5d4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Start quiz 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <Button
+        android:id="@+id/btnQuizChanges2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#e5a977"
+        android:padding="10dp"
+        android:text="Start quiz 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
 </androidx.constraintlayout.widget.ConstraintLayout>
