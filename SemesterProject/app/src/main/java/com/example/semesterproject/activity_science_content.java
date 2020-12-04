@@ -42,12 +42,14 @@ public class activity_science_content extends AppCompatActivity {
         Intent intent = new Intent(this, ScienceMatterContent.class);
         startActivity(intent);
     }
+
     private void openOrganSystems1() {
-        Intent intent = new Intent(this, ScienceOS1Content.class);
+        Intent intent = new Intent(this, ScienceOs1Content.class);
         startActivity(intent);
     }
+
     private void openOrganSystems2() {
-        Intent intent = new Intent(this, ScienceOS2Content.class);
+        Intent intent = new Intent(this, ScienceOs2Content.class);
         startActivity(intent);
     }
 }
