@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".ScienceOs2Muscularsystem">
 
     <ScrollView
@@ -21,7 +22,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="380dp"
-                android:src="@drawable/muscular0"/>
+                android:src="@drawable/muscular0" />
 
             <ImageView
                 android:layout_width="match_parent"
