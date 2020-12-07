@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".ScienceMatterChanges1">
 
     <ScrollView
@@ -30,7 +31,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:src="@drawable/changesmatter1c"/>
+                android:src="@drawable/changesmatter1c" />
 
             <ImageView
                 android:layout_width="match_parent"
