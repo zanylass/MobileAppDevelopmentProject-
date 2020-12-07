@@ -59,11 +59,7 @@ public class MathRatioQuiz1 extends AppCompatActivity {
 
     private long backPressedTime;
 
-
-
     private ArrayList<Question> questionList;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
