@@ -40,22 +40,34 @@ public class QuizDbHelperScience extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+
     private void fillQuestionsTable() {
-        Question q1 = new Question("?", "A: a", "B: b", "C: c","D: d", 1);
+        Question q1 = new Question("When does the matter of the system become more active and excited?",
+                "A: When the temperature increases", "B: When the temperature decreases",
+                "C: When the density increases","D: When the density decreases", 1);
         addQuestion(q1);
-        Question q2 = new Question("?", "A: a", "B: b", "C: c","D: d", 2);
+        Question q2 = new Question("Matter only moves from one phase to another by ________ means?",
+                "A: Static", "B: Physical",
+                "C: Temperature","D: Molecules", 2);
         addQuestion(q2);
-        Question q3 = new Question("?", "A: a", "B: b", "C: c","D: d", 1);
+        Question q3 = new Question("The molecules in the sun are an example of?",
+                "A: Solid", "B: Liquid",
+                "C: Gas","D: Plasma", 4);
         addQuestion(q3);
-        Question q4 = new Question("?", "A: a", "B: b", "C: c","D: d", 3);
+        Question q4 = new Question("Ceramics are an example of?",
+                "A: Solids", "B: Liquids",
+                "C: Gas","D: Plasma", 1);
         addQuestion(q4);
-        Question q5 = new Question("?", "A: a", "B: b", "C: c","D: d", 4);
+        Question q5 = new Question("Which of the gases listed below has the lowest mass?",
+                "A: Carbon dioxide", "B: Oxygen",
+                "C: Nitrogen","D: Helium", 4);
         addQuestion(q5);
-        Question q6 = new Question("?", "A: a", "B: b", "C: c","D: d", 3);
+        Question q6 = new Question("Which of the following is not a liquid?",
+                "A: Ocean", "B: Juice", "C: Brick","D: Milk", 3);
         addQuestion(q6);
     }
 
-    private void addQuestion(Question question) {
+    void addQuestion(Question question) {
         ContentValues cv = new ContentValues();
         cv.put(QuizContract.QuestionsTable.COLUMN_QUESTION, question.getQuestion());
         cv.put(QuizContract.QuestionsTable.COLUMN_OPTION1, question.getOption1());
