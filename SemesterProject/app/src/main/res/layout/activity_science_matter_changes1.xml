@@ -20,31 +20,31 @@
             android:orientation="vertical">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="600dp"
                 android:src="@drawable/changesmatter1a"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="690dp"
                 android:src="@drawable/changesmatter1b"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="550dp"
                 android:src="@drawable/changesmatter1c" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="650dp"
                 android:src="@drawable/changesmatter1d"/>
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="500dp"
                 android:src="@drawable/changesmatter1e"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="480dp"
                 android:src="@drawable/changesmatter1f"/>
 
             <ImageView

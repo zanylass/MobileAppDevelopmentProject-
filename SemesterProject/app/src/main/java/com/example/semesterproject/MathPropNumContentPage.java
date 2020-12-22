@@ -28,6 +28,7 @@ public class MathPropNumContentPage extends AppCompatActivity {
     private Button pn2quiz;
     private Button pn3quiz;
     private TextView pntopicx;
+    private Switch switch1;
 
 
     private boolean mIsBound = false;
@@ -66,6 +67,10 @@ public class MathPropNumContentPage extends AppCompatActivity {
         setContentView(R.layout.activity_math_prop_num_content_page);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Properties of Numbers");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         pn1topic=(TextView)findViewById(R.id.textViewPN1);
         pn2topic=(TextView)findViewById(R.id.textViewPN2);
         pn3topic=(TextView)findViewById(R.id.textViewPN3);
@@ -140,6 +145,20 @@ public class MathPropNumContentPage extends AppCompatActivity {
             }
         });
         mHomeWatcher.startWatch();
+        switch1 =(Switch) findViewById(R.id.switch1);
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (switch1.isChecked()){
+                    mServ.pauseMusic();
+                    switch1.setText("Music off");
+                }else{
+                    mServ.resumeMusic();
+                    switch1.setText("Music on");
+                }
+
+            }
+        });
 
 
 

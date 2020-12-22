@@ -14,5 +14,8 @@ public class MathPNx extends AppCompatActivity {
         setContentView(R.layout.activity_math_p_nx);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Properties of multiplication");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

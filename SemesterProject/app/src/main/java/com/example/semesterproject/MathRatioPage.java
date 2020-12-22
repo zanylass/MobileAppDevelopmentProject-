@@ -13,6 +13,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.r0adkll.slidr.Slidr;
@@ -31,6 +32,8 @@ public class MathRatioPage extends AppCompatActivity {
     public Button quiz1;
     public Button quiz2;
     public Button quiz3;
+
+    private Switch switch1;
 
     //
     private boolean mIsBound = false;
@@ -70,6 +73,10 @@ public class MathRatioPage extends AppCompatActivity {
         setContentView(R.layout.activity_math_ratio_page);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Ratio, rates and percentage");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         quiz1=(Button) findViewById(R.id.buttonQuiz1);
         quiz2=(Button) findViewById(R.id.buttonQuiz2);
         quiz3=(Button) findViewById(R.id.buttonQuiz3);
@@ -135,6 +142,20 @@ public class MathRatioPage extends AppCompatActivity {
             }
         });
         mHomeWatcher.startWatch();
+        switch1 =(Switch) findViewById(R.id.switch1);
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (switch1.isChecked()){
+                    mServ.pauseMusic();
+                    switch1.setText("Music off");
+                }else{
+                    mServ.resumeMusic();
+                    switch1.setText("Music on");
+                }
+
+            }
+        });
     }
 
     public void openRatioTopic(){

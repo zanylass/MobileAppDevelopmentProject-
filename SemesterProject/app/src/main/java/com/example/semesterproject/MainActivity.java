@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +22,8 @@ import java.util.Collections;
 public class MainActivity extends AppCompatActivity {
     public Button mathButton;
     public Button scienceButton;
+
+    private Switch switch1;
 
 
     //
@@ -60,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mathButton=(Button)findViewById(R.id.MathButton);
         scienceButton = (Button) findViewById(R.id.ScienceButton);
+
+
+
 
         mathButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,8 +107,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mHomeWatcher.startWatch();
+        switch1 =(Switch) findViewById(R.id.switch1);
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (switch1.isChecked()){
+                    mServ.pauseMusic();
+                    switch1.setText("Music off");
+                }else{
+                    mServ.resumeMusic();
+                    switch1.setText("Music on");
+                }
+
+            }
+        });
 
 
+
+    }
+    public void pause(View v) {
+        if (mServ != null) {
+            mServ.pauseMusic();
+        }
     }
 
     public void openMathContent() {

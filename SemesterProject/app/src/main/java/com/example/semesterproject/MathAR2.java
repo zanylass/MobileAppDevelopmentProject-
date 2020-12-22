@@ -14,5 +14,8 @@ public class MathAR2 extends AppCompatActivity {
         setContentView(R.layout.activity_math_a_r2);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Exponents");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

@@ -13,5 +13,8 @@ public class ScienceMatterStates extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_matter_states);
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("States of matter");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

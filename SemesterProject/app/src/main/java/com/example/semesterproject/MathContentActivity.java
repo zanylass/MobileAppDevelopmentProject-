@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.view.View;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.r0adkll.slidr.Slidr;
@@ -19,6 +20,8 @@ public class MathContentActivity extends AppCompatActivity {
     public TextView operatios;
     public TextView negNumbers;
     public TextView propNumbers;
+
+    private Switch switch1;
 
     //
     private boolean mIsBound = false;
@@ -56,6 +59,10 @@ public class MathContentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_math_content);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Math");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         ratios=(TextView) findViewById(R.id.textViewRatios);
         operatios=(TextView) findViewById(R.id.textViewArOperations);
@@ -110,6 +117,20 @@ public class MathContentActivity extends AppCompatActivity {
             }
         });
         mHomeWatcher.startWatch();
+        switch1 =(Switch) findViewById(R.id.switch1);
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (switch1.isChecked()){
+                    mServ.pauseMusic();
+                    switch1.setText("Music off");
+                }else{
+                    mServ.resumeMusic();
+                    switch1.setText("Music on");
+                }
+
+            }
+        });
 
 
 

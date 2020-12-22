@@ -19,31 +19,31 @@
         android:orientation="vertical">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="470dp"
             android:src="@drawable/statesofmatter1"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="620dp"
             android:src="@drawable/statesofmatter2"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="450dp"
             android:src="@drawable/statesofmatter3"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="650dp"
             android:src="@drawable/statesofmatter4"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="780dp"
             android:src="@drawable/statesofmatter5"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="620dp"
             android:src="@drawable/statesofmatter6"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="850dp"
             android:src="@drawable/statesofmatter7"/>
     </LinearLayout></ScrollView>
 

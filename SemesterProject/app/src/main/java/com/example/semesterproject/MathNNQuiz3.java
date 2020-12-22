@@ -2,15 +2,21 @@ package com.example.semesterproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.IBinder;
+import android.os.PowerManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -59,7 +65,38 @@ public class MathNNQuiz3 extends AppCompatActivity {
 
 
     private ArrayList<Question> questionList;
+    private Switch switch1;
 
+    //
+    private boolean mIsBound = false;
+    private MusicService mServ;
+    private ServiceConnection Scon =new ServiceConnection(){
+
+        public void onServiceConnected(ComponentName name, IBinder
+                binder) {
+            mServ = ((MusicService.ServiceBinder)binder).getService();
+        }
+
+        public void onServiceDisconnected(ComponentName name) {
+            mServ = null;
+        }
+    };
+
+    void doBindService(){
+        bindService(new Intent(this,MusicService.class),
+                Scon, Context.BIND_AUTO_CREATE);
+        mIsBound = true;
+    }
+
+    void doUnbindService()
+    {
+        if(mIsBound)
+        {
+            unbindService(Scon);
+            mIsBound = false;
+        }
+    }
+    //
 
 
     @Override
@@ -68,6 +105,10 @@ public class MathNNQuiz3 extends AppCompatActivity {
         setContentView(R.layout.activity_math_ratio_quiz1);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Quiz 3");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         checkButton=(Button)findViewById(R.id.buttonCheck);
         textViewQuestion=(TextView)findViewById(R.id.text_view_question1);
         textViewScore=(TextView)findViewById(R.id.text_view_score);
@@ -118,6 +159,43 @@ public class MathNNQuiz3 extends AppCompatActivity {
                     showNextQuestion();
                 }
                 //openQuizPage2();
+            }
+        });
+        //
+        doBindService();
+        Intent music = new Intent();
+        music.setClass(this, MusicService.class);
+        startService(music);
+        HomeWatcher mHomeWatcher;
+
+        mHomeWatcher = new HomeWatcher(this);
+        mHomeWatcher.setOnHomePressedListener(new HomeWatcher.OnHomePressedListener() {
+            @Override
+            public void onHomePressed() {
+                if (mServ != null) {
+                    mServ.pauseMusic();
+                }
+            }
+            @Override
+            public void onHomeLongPressed() {
+                if (mServ != null) {
+                    mServ.pauseMusic();
+                }
+            }
+        });
+        mHomeWatcher.startWatch();
+        switch1 =(Switch) findViewById(R.id.switch1);
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (switch1.isChecked()){
+                    mServ.pauseMusic();
+                    switch1.setText("Music off");
+                }else{
+                    mServ.resumeMusic();
+                    switch1.setText("Music on");
+                }
+
             }
         });
     }
@@ -249,6 +327,10 @@ public class MathNNQuiz3 extends AppCompatActivity {
         if (countDownTimer!=null){
             countDownTimer.cancel();
         }
+        doUnbindService();
+        Intent music = new Intent();
+        music.setClass(this,MusicService.class);
+        stopService(music);
     }
 
     @Override
@@ -259,5 +341,32 @@ public class MathNNQuiz3 extends AppCompatActivity {
         outState.putLong(KEY_MILLIS_LEFT, timeLeftInMillis);
         outState.putBoolean(KEY_ANSWERED, answered);
         outState.putParcelableArrayList(KEY_QUESTION_LIST, questionList);
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (mServ != null) {
+            mServ.resumeMusic();
+        }
+
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        PowerManager pm = (PowerManager)
+                getSystemService(Context.POWER_SERVICE);
+        boolean isScreenOn = false;
+        if (pm != null) {
+            isScreenOn = pm.isScreenOn();
+        }
+
+        if (!isScreenOn) {
+            if (mServ != null) {
+                mServ.pauseMusic();
+            }
+        }
+
     }
 }

@@ -13,5 +13,8 @@ public class ScienceMatterChanges1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_matter_changes1);
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Changes in states of matter 1");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

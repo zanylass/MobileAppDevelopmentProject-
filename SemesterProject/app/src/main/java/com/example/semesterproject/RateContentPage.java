@@ -14,5 +14,8 @@ public class RateContentPage extends AppCompatActivity {
         setContentView(R.layout.activity_rate_content_page);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Rate");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

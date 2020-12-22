@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".MathPercentageContent">
 
     <ScrollView
@@ -21,7 +22,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Percents"
+                android:text="Percentage"
                 android:textAlignment="center"
                 android:textColor="@android:color/holo_red_dark"
                 android:textSize="25dp" />

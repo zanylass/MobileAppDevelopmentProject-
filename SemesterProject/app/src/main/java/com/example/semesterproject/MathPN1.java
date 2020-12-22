@@ -14,5 +14,8 @@ public class MathPN1 extends AppCompatActivity {
         setContentView(R.layout.activity_math_p_n1);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Properties of addition");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

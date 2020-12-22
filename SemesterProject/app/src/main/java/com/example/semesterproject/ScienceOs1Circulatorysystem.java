@@ -14,5 +14,8 @@ public class ScienceOs1Circulatorysystem extends AppCompatActivity {
         setContentView(R.layout.activity_science_os1_circulatorysystem);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Circulatory system");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

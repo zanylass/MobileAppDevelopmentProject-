@@ -18,59 +18,92 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScienceQuizOS1Circulatory"></activity>
-        <activity android:name=".SienceQuizOS1Excretory" />
-        <activity android:name=".ScienceQuizOS1Respiratory" />
-        <activity android:name=".ScienceQuizOS1Nervous" />
-        <activity android:name=".ScienceQuizOS2Muscular" />
-        <activity android:name=".ScienceQuizOS2Skeletal" />
-        <activity android:name=".ScienceQuizChangesMatter2" />
-        <activity android:name=".ScienceQuizChangesMatter1" />
-        <activity android:name=".ScienceQuizOS2Digestive" />
+        <activity android:name=".ScienceQuizOS1Circulatory"
+            android:parentActivityName=".ScienceOs1Content"
+            android:theme="@style/AppTheme.SlideActivityTheme"></activity>
+        <activity android:name=".SienceQuizOS1Excretory"
+            android:parentActivityName=".ScienceOs1Content"
+            android:theme="@style/AppTheme.SlideActivityTheme"/>
+        <activity android:name=".ScienceQuizOS1Respiratory"
+            android:parentActivityName=".ScienceOs1Content"
+            android:theme="@style/AppTheme.SlideActivityTheme"/>
+        <activity android:name=".ScienceQuizOS1Nervous"
+            android:parentActivityName=".ScienceOs1Content"
+            android:theme="@style/AppTheme.SlideActivityTheme"/>
+        <activity android:name=".ScienceQuizOS2Muscular"
+            android:parentActivityName=".ScienceOs2Content"
+            android:theme="@style/AppTheme.SlideActivityTheme"/>
+        <activity android:name=".ScienceQuizOS2Skeletal"
+            android:parentActivityName=".ScienceOs2Content"
+            android:theme="@style/AppTheme.SlideActivityTheme"/>
+        <activity android:name=".ScienceQuizChangesMatter2"
+            android:parentActivityName=".ScienceMatterContent"
+            android:theme="@style/AppTheme.SlideActivityTheme"/>
+        <activity android:name=".ScienceQuizChangesMatter1"
+            android:parentActivityName=".ScienceMatterContent"
+            android:theme="@style/AppTheme.SlideActivityTheme"/>
+        <activity android:name=".ScienceQuizOS2Digestive"
+            android:parentActivityName=".ScienceOs2Content"
+            android:theme="@style/AppTheme.SlideActivityTheme"/>
         <activity
             android:name=".ScienceQuizMatterStates"
+            android:parentActivityName=".ScienceMatterContent"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceMatterChanges2"
+            android:parentActivityName=".ScienceMatterContent"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceMatterChanges1"
+            android:parentActivityName=".ScienceMatterContent"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceMatterStates"
+            android:parentActivityName=".ScienceMatterContent"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs2Muscularsystem"
+            android:parentActivityName=".ScienceOs2Content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs2Skeletalsystem"
+            android:parentActivityName=".ScienceOs2Content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs2Digestivesystem"
+            android:parentActivityName=".ScienceOs2Content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs2Content"
+            android:parentActivityName=".activity_science_content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs1Circulatorysystem"
+            android:parentActivityName=".ScienceOs1Content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs1Excretorysystem"
+            android:parentActivityName=".ScienceOs1Content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs1Respiratorysystem"
+            android:parentActivityName=".ScienceOs1Content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs1Nervoussystem"
+            android:parentActivityName=".ScienceOs1Content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceOs1Content"
+            android:parentActivityName=".activity_science_content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".ScienceMatterContent"
+            android:parentActivityName=".activity_science_content"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".activity_science_content"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.SlideActivityTheme" />
 
         <service
@@ -79,115 +112,143 @@
 
         <activity
             android:name=".MathNN2"
+            android:parentActivityName=".MathNegNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme"
             tools:ignore="DuplicateActivity" />
         <activity
             android:name=".MathPNx"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPN4"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathAR3"
+            android:parentActivityName=".MathArithOperationContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".RateContentPage"
+            android:parentActivityName=".MathRatioPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPropNumContentPage"
+            android:parentActivityName=".MathContentActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPN3"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPN2"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPN1"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPropN3Quiz"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPropN2Quiz"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPropN1Quiz"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathNNQuiz3"
+            android:parentActivityName=".MathPropNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathNNQuiz2"
+            android:parentActivityName=".MathNegNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathNNQuiz1"
+            android:parentActivityName=".MathNegNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathNN3"
+            android:parentActivityName=".MathNegNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathNN1"
+            android:parentActivityName=".MathNegNumContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathNegNumContentPage"
+            android:parentActivityName=".MathContentActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathAR2"
+            android:parentActivityName=".MathArithOperationContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathAR1"
+            android:parentActivityName=".MathArithOperationContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathARQuiz3"
+            android:parentActivityName=".MathArithOperationContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathARQuiz2"
+            android:parentActivityName=".MathArithOperationContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathARQuiz1"
+            android:parentActivityName=".MathArithOperationContentPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathArithOperationContentPage"
+            android:parentActivityName=".MathContentActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathPercentageContent"
+            android:parentActivityName=".MathRatioPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathQuizPercentage"
+            android:parentActivityName=".MathRatioPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathRateQuiz"
+            android:parentActivityName=".MathRatioPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".RatioContentPage"
+            android:parentActivityName=".MathRatioPage"
             android:label="@string/title_activity_ratio_content_page"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
@@ -198,10 +259,12 @@
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathRatioQuiz1"
+            android:parentActivityName=".MathRatioPage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity
             android:name=".MathRatioPage"
+            android:parentActivityName=".MathContentActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SlideActivityTheme" />
         <activity

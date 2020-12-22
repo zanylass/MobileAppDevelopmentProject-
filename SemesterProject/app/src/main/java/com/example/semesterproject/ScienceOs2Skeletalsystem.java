@@ -13,5 +13,8 @@ public class ScienceOs2Skeletalsystem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_os2_skeletalsystem);
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Skeletal system");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

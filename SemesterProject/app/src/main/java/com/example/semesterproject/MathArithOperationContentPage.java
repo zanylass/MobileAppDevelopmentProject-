@@ -11,6 +11,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.r0adkll.slidr.Slidr;
@@ -22,6 +23,7 @@ public class MathArithOperationContentPage extends AppCompatActivity {
     private Button ar1Button;
     private Button ar2Button;
     private Button ar3Button;
+    private Switch switch1;
 
     //
     private boolean mIsBound = false;
@@ -60,6 +62,11 @@ public class MathArithOperationContentPage extends AppCompatActivity {
         setContentView(R.layout.activity_math_arith_operation_content_page);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Arithmetic Operations");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         arOper1=(TextView)findViewById(R.id.ArOperTextView1);
         arOper2=(TextView)findViewById(R.id.ArOperTextView2);
         arOper3=(TextView)findViewById(R.id.ArOperTextView3);
@@ -120,6 +127,20 @@ public class MathArithOperationContentPage extends AppCompatActivity {
             }
         });
         mHomeWatcher.startWatch();
+        switch1 =(Switch) findViewById(R.id.switch1);
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (switch1.isChecked()){
+                    mServ.pauseMusic();
+                    switch1.setText("Music off");
+                }else{
+                    mServ.resumeMusic();
+                    switch1.setText("Music on");
+                }
+
+            }
+        });
     }
     public void openAr1Topic(){
         Intent intent = new Intent(this, MathAR1.class);

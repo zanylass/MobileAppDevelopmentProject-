@@ -14,5 +14,8 @@ public class MathPN3 extends AppCompatActivity {
         setContentView(R.layout.activity_math_p_n3);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Greatest Common Factor");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

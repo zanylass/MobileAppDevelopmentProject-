@@ -20,22 +20,22 @@
             android:orientation="vertical">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="560dp"
                 android:src="@drawable/changesmatter2a"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="500dp"
                 android:src="@drawable/changesmatter2b"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="500dp"
                 android:src="@drawable/changesmatter2c"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="410dp"
                 android:src="@drawable/changesmatter2d"/>
 
 

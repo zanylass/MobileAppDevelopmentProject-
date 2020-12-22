@@ -14,5 +14,8 @@ public class MathPN4 extends AppCompatActivity {
         setContentView(R.layout.activity_math_p_n4);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Least Common Multiple");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

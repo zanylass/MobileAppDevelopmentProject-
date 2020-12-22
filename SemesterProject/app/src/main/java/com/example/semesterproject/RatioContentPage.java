@@ -18,6 +18,9 @@ public class RatioContentPage extends AppCompatActivity {
         setContentView(R.layout.activity_ratio_content_page);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Ratio");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         
     }
 }

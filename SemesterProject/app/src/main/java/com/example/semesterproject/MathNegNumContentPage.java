@@ -11,6 +11,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.r0adkll.slidr.Slidr;
@@ -23,6 +24,7 @@ public class MathNegNumContentPage extends AppCompatActivity {
     private Button nn1Button;
     private Button nn2Button;
     private Button nn3Button;
+    private Switch switch1;
 
     //
     private boolean mIsBound = false;
@@ -61,6 +63,10 @@ public class MathNegNumContentPage extends AppCompatActivity {
         setContentView(R.layout.activity_math_neg_num_content_page);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Negative Numbers");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         nnOper1=(TextView)findViewById(R.id.NNumTextView1);
         nnOper3=(TextView)findViewById(R.id.NNumTextView3);
         nnOper2=(TextView)findViewById(R.id.NN2TextView);
@@ -122,6 +128,20 @@ public class MathNegNumContentPage extends AppCompatActivity {
             }
         });
         mHomeWatcher.startWatch();
+        switch1 =(Switch) findViewById(R.id.switch1);
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (switch1.isChecked()){
+                    mServ.pauseMusic();
+                    switch1.setText("Music off");
+                }else{
+                    mServ.resumeMusic();
+                    switch1.setText("Music on");
+                }
+
+            }
+        });
     }
     public void openNN1Topic(){
         Intent intent = new Intent(this, MathNN1.class);

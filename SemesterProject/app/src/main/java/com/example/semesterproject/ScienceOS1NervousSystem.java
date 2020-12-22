@@ -14,5 +14,8 @@ public class ScienceOs1Nervoussystem extends AppCompatActivity {
         setContentView(R.layout.activity_science_os1_nervoussystem);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Nervous system");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

@@ -14,5 +14,8 @@ public class MathNN1 extends AppCompatActivity {
         setContentView(R.layout.activity_math_n_n1);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Negative numbers");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

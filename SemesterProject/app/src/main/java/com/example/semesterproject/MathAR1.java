@@ -14,5 +14,8 @@ public class MathAR1 extends AppCompatActivity {
         setContentView(R.layout.activity_math_a_r1);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Arithmetic operations on decimals");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

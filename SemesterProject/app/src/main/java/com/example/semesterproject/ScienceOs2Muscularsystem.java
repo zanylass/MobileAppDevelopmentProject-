@@ -13,5 +13,8 @@ public class ScienceOs2Muscularsystem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_os2_muscularsystem);
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Muscular system");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

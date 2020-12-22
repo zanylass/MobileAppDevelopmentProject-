@@ -14,5 +14,8 @@ public class ScienceOs2Digestivesystem extends AppCompatActivity {
         setContentView(R.layout.activity_science_os2_digestivesystem);
         //Sliding activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Digestive system");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

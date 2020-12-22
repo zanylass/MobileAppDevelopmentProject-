@@ -14,5 +14,8 @@ public class MathPN2 extends AppCompatActivity {
         setContentView(R.layout.activity_math_p_n2);
         //sliding left to parent activity
         Slidr.attach(this);
+        //toolbar back button and name
+        getSupportActionBar().setTitle("Whole numbers");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
